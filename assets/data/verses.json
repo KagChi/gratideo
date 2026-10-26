@@ -1,0 +1,2316 @@
+{
+ "translation": "BSB",
+ "count": 385,
+ "verses": [
+  {
+   "id": "v001",
+   "ref": "Matthew 6:33",
+   "theme": "god-first",
+   "text": "But seek first the kingdom of God and His righteousness, and all these things will be added unto you."
+  },
+  {
+   "id": "v002",
+   "ref": "Proverbs 3:5–6",
+   "theme": "god-first",
+   "text": "Trust in the LORD with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He will make your paths straight."
+  },
+  {
+   "id": "v003",
+   "ref": "Proverbs 3:9–10",
+   "theme": "god-first",
+   "text": "Honor the LORD with your wealth and with the firstfruits of all your harvest; then your barns will be filled with plenty, and your vats will overflow with new wine."
+  },
+  {
+   "id": "v004",
+   "ref": "Exodus 20:3",
+   "theme": "god-first",
+   "text": "You shall have no other gods before Me."
+  },
+  {
+   "id": "v005",
+   "ref": "Deuteronomy 6:5",
+   "theme": "god-first",
+   "text": "And you shall love the LORD your God with all your heart and with all your soul and with all your strength."
+  },
+  {
+   "id": "v006",
+   "ref": "Matthew 22:37–38",
+   "theme": "god-first",
+   "text": "Jesus declared, “‘Love the Lord your God with all your heart and with all your soul and with all your mind.’ This is the first and greatest commandment.”"
+  },
+  {
+   "id": "v007",
+   "ref": "Colossians 1:17–18",
+   "theme": "god-first",
+   "text": "He is before all things, and in Him all things hold together. And He is the head of the body, the church; He is the beginning and firstborn from among the dead, so that in all things He may have preeminence."
+  },
+  {
+   "id": "v008",
+   "ref": "Colossians 3:1–2",
+   "theme": "god-first",
+   "text": "Therefore, since you have been raised with Christ, strive for the things above, where Christ is seated at the right hand of God. Set your minds on things above, not on earthly things."
+  },
+  {
+   "id": "v009",
+   "ref": "Colossians 3:23",
+   "theme": "god-first",
+   "text": "Whatever you do, work at it with your whole being, for the Lord and not for men."
+  },
+  {
+   "id": "v010",
+   "ref": "Psalm 63:1",
+   "theme": "god-first",
+   "text": "O God, You are my God. Earnestly I seek You; my soul thirsts for You. My body yearns for You in a dry and weary land without water."
+  },
+  {
+   "id": "v011",
+   "ref": "Psalm 5:3",
+   "theme": "god-first",
+   "text": "In the morning, O LORD, You hear my voice; at daybreak I lay my plea before You and wait in expectation."
+  },
+  {
+   "id": "v012",
+   "ref": "Psalm 143:8",
+   "theme": "god-first",
+   "text": "Let me hear Your loving devotion in the morning, for I have put my trust in You. Teach me the way I should walk, for to You I lift up my soul."
+  },
+  {
+   "id": "v013",
+   "ref": "Mark 1:35",
+   "theme": "god-first",
+   "text": "Early in the morning, while it was still dark, Jesus got up and slipped out to a solitary place to pray."
+  },
+  {
+   "id": "v014",
+   "ref": "Lamentations 3:22–23",
+   "theme": "god-first",
+   "text": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!"
+  },
+  {
+   "id": "v015",
+   "ref": "Psalm 90:14",
+   "theme": "god-first",
+   "text": "Satisfy us in the morning with Your loving devotion, that we may sing for joy and be glad all our days."
+  },
+  {
+   "id": "v016",
+   "ref": "Haggai 1:5–7",
+   "theme": "god-first",
+   "text": "Now this is what the LORD of Hosts says: “Consider carefully your ways. You have planted much but harvested little. You eat but never have enough. You drink but never have your fill. You put on clothes but never get warm. You earn wages to put into a bag pierced through.” This is what the LORD of Hosts says: “Consider carefully your ways.”"
+  },
+  {
+   "id": "v017",
+   "ref": "Luke 10:41–42",
+   "theme": "god-first",
+   "text": "“Martha, Martha,” the Lord replied, “you are worried and upset about many things. But only one thing is necessary. Mary has chosen the good portion, and it will not be taken away from her.”"
+  },
+  {
+   "id": "v018",
+   "ref": "Psalm 27:4",
+   "theme": "god-first",
+   "text": "One thing I have asked of the LORD; this is what I desire: to dwell in the house of the LORD all the days of my life, to gaze on the beauty of the LORD and seek Him in His temple."
+  },
+  {
+   "id": "v019",
+   "ref": "Psalm 16:8",
+   "theme": "god-first",
+   "text": "I have set the LORD always before me. Because He is at my right hand, I will not be shaken."
+  },
+  {
+   "id": "v020",
+   "ref": "Psalm 73:25–26",
+   "theme": "god-first",
+   "text": "Whom have I in heaven but You? And on earth I desire no one besides You. My flesh and my heart may fail, but God is the strength of my heart and my portion forever."
+  },
+  {
+   "id": "v021",
+   "ref": "Revelation 2:4–5",
+   "theme": "god-first",
+   "text": "But I have this against you: You have abandoned your first love. Therefore, keep in mind how far you have fallen. Repent and perform the deeds you did at first. But if you do not repent, I will come to you and remove your lampstand from its place."
+  },
+  {
+   "id": "v022",
+   "ref": "Joshua 24:15",
+   "theme": "god-first",
+   "text": "“But if it is unpleasing in your sight to serve the LORD, then choose for yourselves this day whom you will serve, whether the gods your fathers served beyond the Euphrates, or the gods of the Amorites in whose land you are living. As for me and my house, we will serve the LORD!”"
+  },
+  {
+   "id": "v023",
+   "ref": "Psalm 37:4–5",
+   "theme": "god-first",
+   "text": "Delight yourself in the LORD, and He will give you the desires of your heart. Commit your way to the LORD; trust in Him, and He will do it."
+  },
+  {
+   "id": "v024",
+   "ref": "Isaiah 26:3",
+   "theme": "god-first",
+   "text": "You will keep in perfect peace the steadfast of mind, because he trusts in You."
+  },
+  {
+   "id": "v025",
+   "ref": "Philippians 3:8",
+   "theme": "god-first",
+   "text": "More than that, I count all things as loss compared to the surpassing excellence of knowing Christ Jesus my Lord, for whom I have lost all things. I consider them rubbish, that I may gain Christ."
+  },
+  {
+   "id": "v026",
+   "ref": "Matthew 6:21",
+   "theme": "god-first",
+   "text": "For where your treasure is, there your heart will be also."
+  },
+  {
+   "id": "v027",
+   "ref": "Psalm 119:105",
+   "theme": "god-first",
+   "text": "Your word is a lamp to my feet and a light to my path."
+  },
+  {
+   "id": "v028",
+   "ref": "Psalm 119:11",
+   "theme": "god-first",
+   "text": "I have hidden Your word in my heart that I might not sin against You."
+  },
+  {
+   "id": "v029",
+   "ref": "Deuteronomy 8:3",
+   "theme": "god-first",
+   "text": "He humbled you, and in your hunger He gave you manna to eat, which neither you nor your fathers had known, so that you might understand that man does not live on bread alone, but on every word that comes from the mouth of the LORD."
+  },
+  {
+   "id": "v030",
+   "ref": "John 6:35",
+   "theme": "god-first",
+   "text": "Jesus answered, “I am the bread of life. Whoever comes to Me will never hunger, and whoever believes in Me will never thirst.”"
+  },
+  {
+   "id": "v031",
+   "ref": "Psalm 42:1–2",
+   "theme": "god-first",
+   "text": "As the deer pants for streams of water, so my soul longs after You, O God. My soul thirsts for God, the living God. When shall I come and appear in God’s presence?"
+  },
+  {
+   "id": "v032",
+   "ref": "Psalm 84:10",
+   "theme": "god-first",
+   "text": "For better is one day in Your courts than a thousand elsewhere. I would rather be a doorkeeper in the house of my God than dwell in the tents of the wicked."
+  },
+  {
+   "id": "v033",
+   "ref": "Psalm 86:11",
+   "theme": "god-first",
+   "text": "Teach me Your way, O LORD, that I may walk in Your truth. Give me an undivided heart, that I may fear Your name."
+  },
+  {
+   "id": "v034",
+   "ref": "Psalm 25:4–5",
+   "theme": "god-first",
+   "text": "Show me Your ways, O LORD; teach me Your paths. Guide me in Your truth and teach me, for You are the God of my salvation; all day long I wait for You."
+  },
+  {
+   "id": "v035",
+   "ref": "Proverbs 16:3",
+   "theme": "god-first",
+   "text": "Commit your works to the LORD and your plans will be achieved."
+  },
+  {
+   "id": "v036",
+   "ref": "Proverbs 16:9",
+   "theme": "god-first",
+   "text": "A man’s heart plans his course, but the LORD determines his steps."
+  },
+  {
+   "id": "v037",
+   "ref": "Psalm 127:1",
+   "theme": "god-first",
+   "text": "Unless the LORD builds the house, its builders labor in vain; unless the LORD protects the city, its watchmen stand guard in vain."
+  },
+  {
+   "id": "v038",
+   "ref": "Zechariah 4:6",
+   "theme": "god-first",
+   "text": "So he said to me, “This is the word of the LORD to Zerubbabel: Not by might nor by power, but by My Spirit, says the LORD of Hosts.”"
+  },
+  {
+   "id": "v039",
+   "ref": "1 Chronicles 29:11–12",
+   "theme": "god-first",
+   "text": "Yours, O LORD, is the greatness and the power and the glory and the splendor and the majesty, for everything in heaven and on earth belongs to You. Yours, O LORD, is the kingdom, and You are exalted as head over all. Both riches and honor come from You, and You are the ruler over all. In Your hands are power and might to exalt and give strength to all."
+  },
+  {
+   "id": "v040",
+   "ref": "Psalm 100:3",
+   "theme": "god-first",
+   "text": "Know that the LORD is God. It is He who made us, and we are His; we are His people, and the sheep of His pasture."
+  },
+  {
+   "id": "v041",
+   "ref": "1 Thessalonians 5:16–18",
+   "theme": "gratitude",
+   "text": "Rejoice at all times. Pray without ceasing. Give thanks in every circumstance, for this is God’s will for you in Christ Jesus."
+  },
+  {
+   "id": "v042",
+   "ref": "Psalm 100:4–5",
+   "theme": "gratitude",
+   "text": "Enter His gates with thanksgiving and His courts with praise; give thanks to Him and bless His name. For the LORD is good, and His loving devotion endures forever; His faithfulness continues to all generations."
+  },
+  {
+   "id": "v043",
+   "ref": "Psalm 107:1",
+   "theme": "gratitude",
+   "text": "Give thanks to the LORD, for He is good; His loving devotion endures forever."
+  },
+  {
+   "id": "v044",
+   "ref": "Colossians 3:15–17",
+   "theme": "gratitude",
+   "text": "Let the peace of Christ rule in your hearts, for to this you were called as members of one body. And be thankful. Let the word of Christ richly dwell within you as you teach and admonish one another with all wisdom, and as you sing psalms, hymns, and spiritual songs with gratitude in your hearts to God. And whatever you do, in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through Him."
+  },
+  {
+   "id": "v045",
+   "ref": "Philippians 4:6–7",
+   "theme": "gratitude",
+   "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+  },
+  {
+   "id": "v046",
+   "ref": "Psalm 136:1",
+   "theme": "gratitude",
+   "text": "Give thanks to the LORD, for He is good. His loving devotion endures forever."
+  },
+  {
+   "id": "v047",
+   "ref": "Psalm 103:1–5",
+   "theme": "gratitude",
+   "text": "Bless the LORD, O my soul; all that is within me, bless His holy name. Bless the LORD, O my soul, and do not forget all His kind deeds— He who forgives all your iniquities and heals all your diseases, who redeems your life from the Pit and crowns you with loving devotion and compassion, who satisfies you with good things, so that your youth is renewed like the eagle’s."
+  },
+  {
+   "id": "v048",
+   "ref": "Psalm 118:24",
+   "theme": "gratitude",
+   "text": "This is the day that the LORD has made; we will rejoice and be glad in it."
+  },
+  {
+   "id": "v049",
+   "ref": "Psalm 9:1",
+   "theme": "gratitude",
+   "text": "I will give thanks to the LORD with all my heart; I will recount all Your wonders."
+  },
+  {
+   "id": "v050",
+   "ref": "Psalm 28:7",
+   "theme": "gratitude",
+   "text": "The LORD is my strength and my shield; my heart trusts in Him, and I am helped. Therefore my heart rejoices, and I give thanks to Him with my song."
+  },
+  {
+   "id": "v051",
+   "ref": "Psalm 95:1–2",
+   "theme": "gratitude",
+   "text": "Come, let us sing for joy to the LORD; let us shout to the Rock of our salvation! Let us enter His presence with thanksgiving; let us make a joyful noise to Him in song."
+  },
+  {
+   "id": "v052",
+   "ref": "Ephesians 5:19–20",
+   "theme": "gratitude",
+   "text": "Speak to one another with psalms, hymns, and spiritual songs. Sing and make music in your hearts to the Lord, always giving thanks to God the Father for everything in the name of our Lord Jesus Christ."
+  },
+  {
+   "id": "v053",
+   "ref": "Psalm 50:23",
+   "theme": "gratitude",
+   "text": "“He who sacrifices a thank offering honors Me, and to him who rights his way, I will show the salvation of God.”"
+  },
+  {
+   "id": "v054",
+   "ref": "Psalm 116:12–14",
+   "theme": "gratitude",
+   "text": "How can I repay the LORD for all His goodness to me? I will lift the cup of salvation and call on the name of the LORD. I will fulfill my vows to the LORD in the presence of all His people."
+  },
+  {
+   "id": "v055",
+   "ref": "Hebrews 12:28",
+   "theme": "gratitude",
+   "text": "Therefore, since we are receiving an unshakable kingdom, let us be filled with gratitude, and so worship God acceptably with reverence and awe."
+  },
+  {
+   "id": "v056",
+   "ref": "James 1:17",
+   "theme": "gratitude",
+   "text": "Every good and perfect gift is from above, coming down from the Father of the heavenly lights, with whom there is no change or shifting shadow."
+  },
+  {
+   "id": "v057",
+   "ref": "Psalm 34:1–3",
+   "theme": "gratitude",
+   "text": "I will bless the LORD at all times; His praise will always be on my lips. My soul boasts in the LORD; let the oppressed hear and rejoice. Magnify the LORD with me; let us exalt His name together."
+  },
+  {
+   "id": "v058",
+   "ref": "2 Corinthians 9:15",
+   "theme": "gratitude",
+   "text": "Thanks be to God for His indescribable gift!"
+  },
+  {
+   "id": "v059",
+   "ref": "Luke 17:15–16",
+   "theme": "gratitude",
+   "text": "When one of them saw that he was healed, he came back, praising God in a loud voice. He fell facedown at Jesus’ feet in thanksgiving to Him—and he was a Samaritan."
+  },
+  {
+   "id": "v060",
+   "ref": "Psalm 92:1–2",
+   "theme": "gratitude",
+   "text": "It is good to praise the LORD, and to sing praises to Your name, O Most High, to proclaim Your loving devotion in the morning and Your faithfulness at night."
+  },
+  {
+   "id": "v061",
+   "ref": "Psalm 30:11–12",
+   "theme": "gratitude",
+   "text": "You turned my mourning into dancing; You peeled off my sackcloth and clothed me with joy, that my heart may sing Your praises and not be silent. O LORD my God, I will give thanks forever."
+  },
+  {
+   "id": "v062",
+   "ref": "Psalm 150:6",
+   "theme": "gratitude",
+   "text": "Let everything that has breath praise the LORD! Hallelujah!"
+  },
+  {
+   "id": "v063",
+   "ref": "Colossians 2:6–7",
+   "theme": "gratitude",
+   "text": "Therefore, just as you have received Christ Jesus as Lord, continue to walk in Him, rooted and built up in Him, established in the faith as you were taught, and overflowing with thankfulness."
+  },
+  {
+   "id": "v064",
+   "ref": "1 Chronicles 16:34",
+   "theme": "gratitude",
+   "text": "Give thanks to the LORD, for He is good; His loving devotion endures forever."
+  },
+  {
+   "id": "v065",
+   "ref": "Psalm 69:30",
+   "theme": "gratitude",
+   "text": "I will praise God’s name in song and exalt Him with thanksgiving."
+  },
+  {
+   "id": "v066",
+   "ref": "Psalm 147:7",
+   "theme": "gratitude",
+   "text": "Sing to the LORD with thanksgiving; make music on the harp to our God."
+  },
+  {
+   "id": "v067",
+   "ref": "Jonah 2:9",
+   "theme": "gratitude",
+   "text": "“But I, with the voice of thanksgiving, will sacrifice to You. I will fulfill what I have vowed. Salvation is from the LORD!”"
+  },
+  {
+   "id": "v068",
+   "ref": "Psalm 75:1",
+   "theme": "gratitude",
+   "text": "We give thanks to You, O God; we give thanks, for Your Name is near. The people declare Your wondrous works."
+  },
+  {
+   "id": "v069",
+   "ref": "Daniel 2:23",
+   "theme": "gratitude",
+   "text": "“To You, O God of my fathers, I give thanks and praise, because You have given me wisdom and power. And now You have made known to me what we have requested, for You have made known to us the dream of the king.”"
+  },
+  {
+   "id": "v070",
+   "ref": "Psalm 105:1–2",
+   "theme": "gratitude",
+   "text": "Give thanks to the LORD, call upon His name; make known His deeds among the nations. Sing to Him, sing praises to Him; tell of all His wonders."
+  },
+  {
+   "id": "v071",
+   "ref": "Jeremiah 17:7–8",
+   "theme": "trust",
+   "text": "But blessed is the man who trusts in the LORD, whose confidence is in Him. He is like a tree planted by the waters that sends out its roots toward the stream. It does not fear when the heat comes, and its leaves are always green. It does not worry in a year of drought, nor does it cease to produce fruit."
+  },
+  {
+   "id": "v072",
+   "ref": "Psalm 46:10",
+   "theme": "trust",
+   "text": "“Be still and know that I am God; I will be exalted among the nations, I will be exalted over the earth.”"
+  },
+  {
+   "id": "v073",
+   "ref": "Isaiah 41:10",
+   "theme": "trust",
+   "text": "Do not fear, for I am with you; do not be afraid, for I am your God. I will strengthen you; I will surely help you; I will uphold you with My right hand of righteousness."
+  },
+  {
+   "id": "v074",
+   "ref": "Psalm 56:3–4",
+   "theme": "trust",
+   "text": "When I am afraid, I put my trust in You. In God, whose word I praise— in God I trust. I will not be afraid. What can man do to me?"
+  },
+  {
+   "id": "v075",
+   "ref": "Isaiah 26:4",
+   "theme": "trust",
+   "text": "Trust in the LORD forever, because GOD the LORD is the Rock eternal."
+  },
+  {
+   "id": "v076",
+   "ref": "Psalm 62:5–8",
+   "theme": "trust",
+   "text": "Rest in God alone, O my soul, for my hope comes from Him. He alone is my rock and my salvation; He is my fortress; I will not be shaken. My salvation and my honor rest on God, my strong rock; my refuge is in God. Trust in Him at all times, O people; pour out your hearts before Him. God is our refuge. Selah."
+  },
+  {
+   "id": "v077",
+   "ref": "Proverbs 29:25",
+   "theme": "trust",
+   "text": "The fear of man is a snare, but whoever trusts in the LORD is set securely on high."
+  },
+  {
+   "id": "v078",
+   "ref": "Psalm 20:7",
+   "theme": "trust",
+   "text": "Some trust in chariots and others in horses, but we trust in the name of the LORD our God."
+  },
+  {
+   "id": "v079",
+   "ref": "Nahum 1:7",
+   "theme": "trust",
+   "text": "The LORD is good, a stronghold in the day of distress; He cares for those who trust in Him."
+  },
+  {
+   "id": "v080",
+   "ref": "Psalm 112:7",
+   "theme": "trust",
+   "text": "He does not fear bad news; his heart is steadfast, trusting in the LORD."
+  },
+  {
+   "id": "v081",
+   "ref": "Isaiah 43:1–2",
+   "theme": "trust",
+   "text": "Now this is what the LORD says— He who created you, O Jacob, and He who formed you, O Israel: “Do not fear, for I have redeemed you; I have called you by your name; you are Mine! When you pass through the waters, I will be with you; and when you go through the rivers, they will not overwhelm you. When you walk through the fire, you will not be scorched; the flames will not set you ablaze.”"
+  },
+  {
+   "id": "v082",
+   "ref": "Psalm 37:23–24",
+   "theme": "trust",
+   "text": "The steps of a man are ordered by the LORD who takes delight in his journey. Though he falls, he will not be overwhelmed, for the LORD is holding his hand."
+  },
+  {
+   "id": "v083",
+   "ref": "Jeremiah 29:11–13",
+   "theme": "trust",
+   "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope. Then you will call upon Me and come and pray to Me, and I will listen to you. You will seek Me and find Me when you search for Me with all your heart."
+  },
+  {
+   "id": "v084",
+   "ref": "Romans 8:28",
+   "theme": "trust",
+   "text": "And we know that God works all things together for the good of those who love Him, who are called according to His purpose."
+  },
+  {
+   "id": "v085",
+   "ref": "Psalm 23:1–4",
+   "theme": "trust",
+   "text": "The LORD is my shepherd; I shall not want. He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul; He guides me in the paths of righteousness for the sake of His name. Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me; Your rod and Your staff, they comfort me."
+  },
+  {
+   "id": "v086",
+   "ref": "Psalm 23:5–6",
+   "theme": "trust",
+   "text": "You prepare a table before me in the presence of my enemies. You anoint my head with oil; my cup overflows. Surely goodness and mercy will follow me all the days of my life, and I will dwell in the house of the LORD forever."
+  },
+  {
+   "id": "v087",
+   "ref": "Isaiah 40:28–31",
+   "theme": "trust",
+   "text": "Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary; His understanding is beyond searching out. He gives power to the faint and increases the strength of the weak. Even youths grow tired and weary, and young men stumble and fall. But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint."
+  },
+  {
+   "id": "v088",
+   "ref": "Psalm 121:1–3",
+   "theme": "trust",
+   "text": "I lift up my eyes to the hills. From where does my help come? My help comes from the LORD, the Maker of heaven and earth. He will not allow your foot to slip; your Protector will not slumber."
+  },
+  {
+   "id": "v089",
+   "ref": "Psalm 121:7–8",
+   "theme": "trust",
+   "text": "The LORD will guard you from all evil; He will preserve your soul. The LORD will watch over your coming and going, both now and forevermore."
+  },
+  {
+   "id": "v090",
+   "ref": "Psalm 33:20–22",
+   "theme": "trust",
+   "text": "Our soul waits for the LORD; He is our help and our shield. For our hearts rejoice in Him, since we trust in His holy name. May Your loving devotion rest on us, O LORD, as we put our hope in You."
+  },
+  {
+   "id": "v091",
+   "ref": "Deuteronomy 31:6",
+   "theme": "trust",
+   "text": "“Be strong and courageous; do not be afraid or terrified of them, for it is the LORD your God who goes with you; He will never leave you nor forsake you.”"
+  },
+  {
+   "id": "v092",
+   "ref": "Joshua 1:9",
+   "theme": "trust",
+   "text": "“Have I not commanded you to be strong and courageous? Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go.”"
+  },
+  {
+   "id": "v093",
+   "ref": "Psalm 18:2",
+   "theme": "trust",
+   "text": "The LORD is my rock, my fortress, and my deliverer. My God is my rock, in whom I take refuge, my shield, and the horn of my salvation, my stronghold."
+  },
+  {
+   "id": "v094",
+   "ref": "Psalm 91:1–2",
+   "theme": "trust",
+   "text": "He who dwells in the shelter of the Most High will abide in the shadow of the Almighty. I will say to the LORD, “You are my refuge and my fortress, my God, in whom I trust.”"
+  },
+  {
+   "id": "v095",
+   "ref": "Psalm 91:4",
+   "theme": "trust",
+   "text": "He will cover you with His feathers; under His wings you will find refuge; His faithfulness is a shield and rampart."
+  },
+  {
+   "id": "v096",
+   "ref": "Habakkuk 3:17–19",
+   "theme": "trust",
+   "text": "Though the fig tree does not bud and no fruit is on the vines, though the olive crop fails and the fields produce no food, though the sheep are cut off from the fold and no cattle are in the stalls, yet I will exult in the LORD; I will rejoice in the God of my salvation! GOD the Lord is my strength; He makes my feet like those of a deer; He makes me walk upon the heights! For the choirmaster. With stringed instruments."
+  },
+  {
+   "id": "v097",
+   "ref": "2 Chronicles 20:12",
+   "theme": "trust",
+   "text": "“Our God, will You not judge them? For we are powerless before this vast army that comes against us. We do not know what to do, but our eyes are upon You.”"
+  },
+  {
+   "id": "v098",
+   "ref": "Exodus 14:14",
+   "theme": "trust",
+   "text": "“The LORD will fight for you; you need only to be still.”"
+  },
+  {
+   "id": "v099",
+   "ref": "Psalm 27:1",
+   "theme": "trust",
+   "text": "The LORD is my light and my salvation— whom shall I fear? The LORD is the stronghold of my life— whom shall I dread?"
+  },
+  {
+   "id": "v100",
+   "ref": "Psalm 27:13–14",
+   "theme": "trust",
+   "text": "Still I am certain to see the goodness of the LORD in the land of the living. Wait patiently for the LORD; be strong and courageous. Wait patiently for the LORD!"
+  },
+  {
+   "id": "v101",
+   "ref": "Isaiah 30:15",
+   "theme": "trust",
+   "text": "For the Lord GOD, the Holy One of Israel, has said: “By repentance and rest you would be saved; your strength would lie in quiet confidence— but you were not willing.”"
+  },
+  {
+   "id": "v102",
+   "ref": "Isaiah 30:21",
+   "theme": "trust",
+   "text": "And whether you turn to the right or to the left, your ears will hear this command behind you: “This is the way. Walk in it.”"
+  },
+  {
+   "id": "v103",
+   "ref": "Psalm 32:8",
+   "theme": "trust",
+   "text": "I will instruct you and teach you the way you should go; I will give you counsel and watch over you."
+  },
+  {
+   "id": "v104",
+   "ref": "Psalm 37:7",
+   "theme": "trust",
+   "text": "Be still before the LORD and wait patiently for Him; do not fret when men prosper in their ways, when they carry out wicked schemes."
+  },
+  {
+   "id": "v105",
+   "ref": "Romans 15:13",
+   "theme": "trust",
+   "text": "Now may the God of hope fill you with all joy and peace as you believe in Him, so that you may overflow with hope by the power of the Holy Spirit."
+  },
+  {
+   "id": "v106",
+   "ref": "Psalm 9:10",
+   "theme": "trust",
+   "text": "Those who know Your name trust in You, for You, O LORD, have not forsaken those who seek You."
+  },
+  {
+   "id": "v107",
+   "ref": "Psalm 125:1",
+   "theme": "trust",
+   "text": "Those who trust in the LORD are like Mount Zion. It cannot be moved; it abides forever."
+  },
+  {
+   "id": "v108",
+   "ref": "1 Peter 5:7",
+   "theme": "trust",
+   "text": "Cast all your anxiety on Him, because He cares for you."
+  },
+  {
+   "id": "v109",
+   "ref": "Matthew 6:34",
+   "theme": "trust",
+   "text": "Therefore do not worry about tomorrow, for tomorrow will worry about itself. Today has enough trouble of its own."
+  },
+  {
+   "id": "v110",
+   "ref": "Matthew 11:28–30",
+   "theme": "trust",
+   "text": "“Come to Me, all you who are weary and burdened, and I will give you rest. Take My yoke upon you and learn from Me; for I am gentle and humble in heart, and you will find rest for your souls. For My yoke is easy and My burden is light.”"
+  },
+  {
+   "id": "v111",
+   "ref": "James 1:5",
+   "theme": "wisdom",
+   "text": "Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him."
+  },
+  {
+   "id": "v112",
+   "ref": "Proverbs 2:6",
+   "theme": "wisdom",
+   "text": "For the LORD gives wisdom; from His mouth come knowledge and understanding."
+  },
+  {
+   "id": "v113",
+   "ref": "Proverbs 9:10",
+   "theme": "wisdom",
+   "text": "The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding."
+  },
+  {
+   "id": "v114",
+   "ref": "Proverbs 4:7",
+   "theme": "wisdom",
+   "text": "Wisdom is supreme; so acquire wisdom. And whatever you may acquire, gain understanding."
+  },
+  {
+   "id": "v115",
+   "ref": "Proverbs 11:14",
+   "theme": "wisdom",
+   "text": "For lack of guidance, a nation falls, but with many counselors comes deliverance."
+  },
+  {
+   "id": "v116",
+   "ref": "Proverbs 15:22",
+   "theme": "wisdom",
+   "text": "Plans fail for lack of counsel, but with many advisers they succeed."
+  },
+  {
+   "id": "v117",
+   "ref": "Proverbs 19:21",
+   "theme": "wisdom",
+   "text": "Many plans are in a man’s heart, but the purpose of the LORD will prevail."
+  },
+  {
+   "id": "v118",
+   "ref": "Proverbs 3:13–14",
+   "theme": "wisdom",
+   "text": "Blessed is the man who finds wisdom, the man who acquires understanding, for she is more profitable than silver, and her gain is better than fine gold."
+  },
+  {
+   "id": "v119",
+   "ref": "Colossians 1:9–10",
+   "theme": "wisdom",
+   "text": "For this reason, since the day we heard about you, we have not stopped praying for you and asking God to fill you with the knowledge of His will in all spiritual wisdom and understanding, so that you may walk in a manner worthy of the Lord and may please Him in every way: bearing fruit in every good work, growing in the knowledge of God."
+  },
+  {
+   "id": "v120",
+   "ref": "Ephesians 1:17–18",
+   "theme": "wisdom",
+   "text": "…that the God of our Lord Jesus Christ, the glorious Father, may give you a spirit of wisdom and revelation in your knowledge of Him. I ask that the eyes of your heart may be enlightened, so that you may know the hope of His calling, the riches of His glorious inheritance in the saints."
+  },
+  {
+   "id": "v121",
+   "ref": "Psalm 119:130",
+   "theme": "wisdom",
+   "text": "The unfolding of Your words gives light; it informs the simple."
+  },
+  {
+   "id": "v122",
+   "ref": "Proverbs 24:3–4",
+   "theme": "wisdom",
+   "text": "By wisdom a house is built and by understanding it is established; through knowledge its rooms are filled with every precious and beautiful treasure."
+  },
+  {
+   "id": "v123",
+   "ref": "Ecclesiastes 7:12",
+   "theme": "wisdom",
+   "text": "For wisdom, like money, is a shelter, and the advantage of knowledge is that wisdom preserves the life of its owner."
+  },
+  {
+   "id": "v124",
+   "ref": "James 3:17",
+   "theme": "wisdom",
+   "text": "But the wisdom from above is first of all pure, then peace-loving, gentle, accommodating, full of mercy and good fruit, impartial, and sincere."
+  },
+  {
+   "id": "v125",
+   "ref": "Proverbs 13:20",
+   "theme": "wisdom",
+   "text": "He who walks with the wise will become wise, but the companion of fools will be destroyed."
+  },
+  {
+   "id": "v126",
+   "ref": "Proverbs 1:7",
+   "theme": "wisdom",
+   "text": "The fear of the LORD is the beginning of knowledge, but fools despise wisdom and discipline."
+  },
+  {
+   "id": "v127",
+   "ref": "1 Kings 3:9",
+   "theme": "wisdom",
+   "text": "“Therefore give Your servant an understanding heart to judge Your people and to discern between good and evil. For who is able to govern this great people of Yours?”"
+  },
+  {
+   "id": "v128",
+   "ref": "Daniel 2:20–21",
+   "theme": "wisdom",
+   "text": "…and declared: “Blessed be the name of God forever and ever, for wisdom and power belong to Him. He changes the times and seasons; He removes kings and establishes them. He gives wisdom to the wise and knowledge to the discerning.”"
+  },
+  {
+   "id": "v129",
+   "ref": "Proverbs 18:15",
+   "theme": "wisdom",
+   "text": "The heart of the discerning acquires knowledge, and the ear of the wise seeks it out."
+  },
+  {
+   "id": "v130",
+   "ref": "Proverbs 10:19",
+   "theme": "wisdom",
+   "text": "When words are many, sin is unavoidable, but he who restrains his lips is wise."
+  },
+  {
+   "id": "v131",
+   "ref": "Proverbs 15:1",
+   "theme": "wisdom",
+   "text": "A gentle answer turns away wrath, but a harsh word stirs up anger."
+  },
+  {
+   "id": "v132",
+   "ref": "Proverbs 21:5",
+   "theme": "wisdom",
+   "text": "The plans of the diligent bring plenty, as surely as haste leads to poverty."
+  },
+  {
+   "id": "v133",
+   "ref": "Psalm 111:10",
+   "theme": "wisdom",
+   "text": "The fear of the LORD is the beginning of wisdom; all who follow His precepts gain rich understanding. His praise endures forever!"
+  },
+  {
+   "id": "v134",
+   "ref": "Proverbs 12:15",
+   "theme": "wisdom",
+   "text": "The way of a fool is right in his own eyes, but a wise man listens to counsel."
+  },
+  {
+   "id": "v135",
+   "ref": "Proverbs 27:17",
+   "theme": "wisdom",
+   "text": "As iron sharpens iron, so one man sharpens another."
+  },
+  {
+   "id": "v136",
+   "ref": "Luke 14:28",
+   "theme": "wisdom",
+   "text": "Which of you, wishing to build a tower, does not first sit down and count the cost to see if he has the resources to complete it?"
+  },
+  {
+   "id": "v137",
+   "ref": "Psalm 90:12",
+   "theme": "wisdom",
+   "text": "So teach us to number our days, that we may present a heart of wisdom."
+  },
+  {
+   "id": "v138",
+   "ref": "Proverbs 16:16",
+   "theme": "wisdom",
+   "text": "How much better to acquire wisdom than gold! To gain understanding is more desirable than silver."
+  },
+  {
+   "id": "v139",
+   "ref": "Isaiah 11:2",
+   "theme": "wisdom",
+   "text": "The Spirit of the LORD will rest on Him— the Spirit of wisdom and understanding, the Spirit of counsel and strength, the Spirit of knowledge and fear of the LORD."
+  },
+  {
+   "id": "v140",
+   "ref": "John 16:13",
+   "theme": "wisdom",
+   "text": "However, when the Spirit of truth comes, He will guide you into all truth. For He will not speak on His own, but He will speak what He hears, and He will declare to you what is to come."
+  },
+  {
+   "id": "v141",
+   "ref": "1 Peter 5:5–6",
+   "theme": "humility",
+   "text": "Young men, in the same way, submit yourselves to your elders. And all of you, clothe yourselves with humility toward one another, because, “God opposes the proud, but gives grace to the humble.” Humble yourselves, therefore, under God’s mighty hand, so that in due time He may exalt you."
+  },
+  {
+   "id": "v142",
+   "ref": "James 4:10",
+   "theme": "humility",
+   "text": "Humble yourselves before the Lord, and He will exalt you."
+  },
+  {
+   "id": "v143",
+   "ref": "Philippians 2:3–4",
+   "theme": "humility",
+   "text": "Do nothing out of selfish ambition or empty pride, but in humility consider others more important than yourselves. Each of you should look not only to your own interests, but also to the interests of others."
+  },
+  {
+   "id": "v144",
+   "ref": "Philippians 2:5–8",
+   "theme": "humility",
+   "text": "Let this mind be in you which was also in Christ Jesus: Who, existing in the form of God, did not consider equality with God something to be grasped, but emptied Himself, taking the form of a servant, being made in human likeness. And being found in appearance as a man, He humbled Himself and became obedient to death— even death on a cross."
+  },
+  {
+   "id": "v145",
+   "ref": "Micah 6:8",
+   "theme": "humility",
+   "text": "He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?"
+  },
+  {
+   "id": "v146",
+   "ref": "Proverbs 22:4",
+   "theme": "humility",
+   "text": "The rewards of humility and the fear of the LORD are wealth and honor and life."
+  },
+  {
+   "id": "v147",
+   "ref": "Proverbs 11:2",
+   "theme": "humility",
+   "text": "When pride comes, disgrace follows, but with humility comes wisdom."
+  },
+  {
+   "id": "v148",
+   "ref": "Proverbs 16:18",
+   "theme": "humility",
+   "text": "Pride goes before destruction, and a haughty spirit before a fall."
+  },
+  {
+   "id": "v149",
+   "ref": "Matthew 23:12",
+   "theme": "humility",
+   "text": "For whoever exalts himself will be humbled, and whoever humbles himself will be exalted."
+  },
+  {
+   "id": "v150",
+   "ref": "Luke 14:11",
+   "theme": "humility",
+   "text": "“For everyone who exalts himself will be humbled, and the one who humbles himself will be exalted.”"
+  },
+  {
+   "id": "v151",
+   "ref": "John 3:30",
+   "theme": "humility",
+   "text": "He must increase; I must decrease."
+  },
+  {
+   "id": "v152",
+   "ref": "John 15:5",
+   "theme": "humility",
+   "text": "I am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing."
+  },
+  {
+   "id": "v153",
+   "ref": "Isaiah 66:2",
+   "theme": "humility",
+   "text": "Has not My hand made all these things? And so they came into being,” declares the LORD. “This is the one I will esteem: he who is humble and contrite in spirit, who trembles at My word."
+  },
+  {
+   "id": "v154",
+   "ref": "Psalm 25:9",
+   "theme": "humility",
+   "text": "He guides the humble in what is right and teaches them His way."
+  },
+  {
+   "id": "v155",
+   "ref": "Proverbs 15:33",
+   "theme": "humility",
+   "text": "The fear of the LORD is the instruction of wisdom, and humility comes before honor."
+  },
+  {
+   "id": "v156",
+   "ref": "Proverbs 18:12",
+   "theme": "humility",
+   "text": "Before his downfall a man’s heart is proud, but humility comes before honor."
+  },
+  {
+   "id": "v157",
+   "ref": "Matthew 5:3",
+   "theme": "humility",
+   "text": "“Blessed are the poor in spirit, for theirs is the kingdom of heaven.”"
+  },
+  {
+   "id": "v158",
+   "ref": "Matthew 5:5",
+   "theme": "humility",
+   "text": "Blessed are the meek, for they will inherit the earth."
+  },
+  {
+   "id": "v159",
+   "ref": "Matthew 20:26–28",
+   "theme": "humility",
+   "text": "“It shall not be this way among you. Instead, whoever wants to become great among you must be your servant, and whoever wants to be first among you must be your slave— just as the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many.”"
+  },
+  {
+   "id": "v160",
+   "ref": "Mark 10:45",
+   "theme": "humility",
+   "text": "“For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many.”"
+  },
+  {
+   "id": "v161",
+   "ref": "Romans 12:3",
+   "theme": "humility",
+   "text": "For by the grace given me I say to every one of you: Do not think of yourself more highly than you ought, but think of yourself with sober judgment, according to the measure of faith God has given you."
+  },
+  {
+   "id": "v162",
+   "ref": "Romans 12:16",
+   "theme": "humility",
+   "text": "Live in harmony with one another. Do not be proud, but enjoy the company of the lowly. Do not be conceited."
+  },
+  {
+   "id": "v163",
+   "ref": "Galatians 6:3",
+   "theme": "humility",
+   "text": "If anyone thinks he is something when he is nothing, he deceives himself."
+  },
+  {
+   "id": "v164",
+   "ref": "Colossians 3:12",
+   "theme": "humility",
+   "text": "Therefore, as the elect of God, holy and beloved, clothe yourselves with hearts of compassion, kindness, humility, gentleness, and patience."
+  },
+  {
+   "id": "v165",
+   "ref": "Psalm 131:1–2",
+   "theme": "humility",
+   "text": "My heart is not proud, O LORD, my eyes are not haughty. I do not aspire to great things or matters too lofty for me. Surely I have stilled and quieted my soul; like a weaned child with his mother, like a weaned child is my soul within me."
+  },
+  {
+   "id": "v166",
+   "ref": "2 Chronicles 7:14",
+   "theme": "humility",
+   "text": "…and if My people who are called by My name humble themselves and pray and seek My face and turn from their wicked ways, then I will hear from heaven, forgive their sin, and heal their land."
+  },
+  {
+   "id": "v167",
+   "ref": "Proverbs 27:2",
+   "theme": "humility",
+   "text": "Let another praise you, and not your own mouth— a stranger, and not your own lips."
+  },
+  {
+   "id": "v168",
+   "ref": "Jeremiah 9:23–24",
+   "theme": "humility",
+   "text": "This is what the LORD says: “Let not the wise man boast in his wisdom, nor the strong man in his strength, nor the wealthy man in his riches. But let him who boasts boast in this, that he understands and knows Me, that I am the LORD, who exercises loving devotion, justice and righteousness on the earth— for I delight in these things,” declares the LORD."
+  },
+  {
+   "id": "v169",
+   "ref": "1 Corinthians 1:31",
+   "theme": "humility",
+   "text": "Therefore, as it is written: “Let him who boasts boast in the Lord.”"
+  },
+  {
+   "id": "v170",
+   "ref": "2 Corinthians 12:9–10",
+   "theme": "humility",
+   "text": "But He said to me, “My grace is sufficient for you, for My power is perfected in weakness.” Therefore I will boast all the more gladly in my weaknesses, so that the power of Christ may rest on me. That is why, for the sake of Christ, I delight in weaknesses, in insults, in hardships, in persecutions, in difficulties. For when I am weak, then I am strong."
+  },
+  {
+   "id": "v171",
+   "ref": "Psalm 147:6",
+   "theme": "humility",
+   "text": "The LORD sustains the humble, but casts the wicked to the ground."
+  },
+  {
+   "id": "v172",
+   "ref": "James 4:6",
+   "theme": "humility",
+   "text": "But He gives us more grace. This is why it says: “God opposes the proud, but gives grace to the humble.”"
+  },
+  {
+   "id": "v173",
+   "ref": "Deuteronomy 8:17–18",
+   "theme": "humility",
+   "text": "You might say in your heart, “The power and strength of my hands have made this wealth for me.” But remember that it is the LORD your God who gives you the power to gain wealth, in order to confirm His covenant that He swore to your fathers even to this day."
+  },
+  {
+   "id": "v174",
+   "ref": "1 Corinthians 4:7",
+   "theme": "humility",
+   "text": "For who makes you so superior? What do you have that you did not receive? And if you did receive it, why do you boast as though you did not?"
+  },
+  {
+   "id": "v175",
+   "ref": "Zephaniah 2:3",
+   "theme": "humility",
+   "text": "Seek the LORD, all you humble of the earth who carry out His justice. Seek righteousness; seek humility. Perhaps you will be sheltered on the day of the LORD’s anger."
+  },
+  {
+   "id": "v176",
+   "ref": "2 Corinthians 5:17",
+   "theme": "identity",
+   "text": "Therefore if anyone is in Christ, he is a new creation. The old has passed away. Behold, the new has come!"
+  },
+  {
+   "id": "v177",
+   "ref": "Ephesians 2:10",
+   "theme": "identity",
+   "text": "For we are God’s workmanship, created in Christ Jesus to do good works, which God prepared in advance as our way of life."
+  },
+  {
+   "id": "v178",
+   "ref": "1 Peter 2:9",
+   "theme": "identity",
+   "text": "But you are a chosen people, a royal priesthood, a holy nation, a people for God’s own possession, to proclaim the virtues of Him who called you out of darkness into His marvelous light."
+  },
+  {
+   "id": "v179",
+   "ref": "Romans 8:1",
+   "theme": "identity",
+   "text": "Therefore, there is now no condemnation for those who are in Christ Jesus."
+  },
+  {
+   "id": "v180",
+   "ref": "Romans 8:15–17",
+   "theme": "identity",
+   "text": "For you did not receive a spirit of slavery that returns you to fear, but you received the Spirit of sonship, by whom we cry, “Abba! Father!” The Spirit Himself testifies with our spirit that we are God’s children. And if we are children, then we are heirs: heirs of God and co-heirs with Christ—if indeed we suffer with Him, so that we may also be glorified with Him."
+  },
+  {
+   "id": "v181",
+   "ref": "Galatians 2:20",
+   "theme": "identity",
+   "text": "I have been crucified with Christ, and I no longer live, but Christ lives in me. The life I live in the body, I live by faith in the Son of God, who loved me and gave Himself up for me."
+  },
+  {
+   "id": "v182",
+   "ref": "John 1:12",
+   "theme": "identity",
+   "text": "But to all who did receive Him, to those who believed in His name, He gave the right to become children of God."
+  },
+  {
+   "id": "v183",
+   "ref": "Ephesians 1:4–5",
+   "theme": "identity",
+   "text": "For He chose us in Him before the foundation of the world to be holy and blameless in His presence. In love He predestined us for adoption as His sons through Jesus Christ, according to the good pleasure of His will."
+  },
+  {
+   "id": "v184",
+   "ref": "Colossians 3:3",
+   "theme": "identity",
+   "text": "For you died, and your life is now hidden with Christ in God."
+  },
+  {
+   "id": "v185",
+   "ref": "Psalm 139:13–14",
+   "theme": "identity",
+   "text": "For You formed my inmost being; You knit me together in my mother’s womb. I praise You, for I am fearfully and wonderfully made. Marvelous are Your works, and I know this very well."
+  },
+  {
+   "id": "v186",
+   "ref": "Isaiah 43:4",
+   "theme": "identity",
+   "text": "Because you are precious and honored in My sight, and because I love you, I will give men in exchange for you and nations in place of your life."
+  },
+  {
+   "id": "v187",
+   "ref": "Zephaniah 3:17",
+   "theme": "identity",
+   "text": "“The LORD your God is among you; He is mighty to save. He will rejoice over you with gladness; He will quiet you with His love; He will rejoice over you with singing.”"
+  },
+  {
+   "id": "v188",
+   "ref": "1 John 3:1",
+   "theme": "identity",
+   "text": "Behold what manner of love the Father has given to us, that we should be called children of God. And that is what we are! The reason the world does not know us is that it did not know Him."
+  },
+  {
+   "id": "v189",
+   "ref": "Romans 8:37–39",
+   "theme": "identity",
+   "text": "No, in all these things we are more than conquerors through Him who loved us. For I am convinced that neither death nor life, neither angels nor principalities, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."
+  },
+  {
+   "id": "v190",
+   "ref": "John 15:15–16",
+   "theme": "identity",
+   "text": "No longer do I call you servants, for a servant does not understand what his master is doing. But I have called you friends, because everything I have learned from My Father I have made known to you. You did not choose Me, but I chose you. And I appointed you to go and bear fruit—fruit that will remain—so that whatever you ask the Father in My name, He will give you."
+  },
+  {
+   "id": "v191",
+   "ref": "Ephesians 2:4–6",
+   "theme": "identity",
+   "text": "But because of His great love for us, God, who is rich in mercy, made us alive with Christ even when we were dead in our trespasses. It is by grace you have been saved! And God raised us up with Christ and seated us with Him in the heavenly realms in Christ Jesus."
+  },
+  {
+   "id": "v192",
+   "ref": "2 Timothy 1:7",
+   "theme": "identity",
+   "text": "For God has not given us a spirit of fear, but of power, love, and self-control."
+  },
+  {
+   "id": "v193",
+   "ref": "Jeremiah 1:5",
+   "theme": "identity",
+   "text": "“Before I formed you in the womb I knew you, and before you were born I set you apart and appointed you as a prophet to the nations.”"
+  },
+  {
+   "id": "v194",
+   "ref": "Isaiah 49:16",
+   "theme": "identity",
+   "text": "Behold, I have inscribed you on the palms of My hands; your walls are ever before Me."
+  },
+  {
+   "id": "v195",
+   "ref": "Romans 5:8",
+   "theme": "identity",
+   "text": "But God proves His love for us in this: While we were still sinners, Christ died for us."
+  },
+  {
+   "id": "v196",
+   "ref": "Galatians 4:6–7",
+   "theme": "identity",
+   "text": "And because you are sons, God sent the Spirit of His Son into our hearts, crying out, “Abba, Father!” So you are no longer a slave, but a son; and since you are a son, you are also an heir through God."
+  },
+  {
+   "id": "v197",
+   "ref": "1 Corinthians 6:19–20",
+   "theme": "identity",
+   "text": "Do you not know that your body is a temple of the Holy Spirit who is in you, whom you have received from God? You are not your own; you were bought at a price. Therefore glorify God with your body."
+  },
+  {
+   "id": "v198",
+   "ref": "Ephesians 1:7",
+   "theme": "identity",
+   "text": "In Him we have redemption through His blood, the forgiveness of our trespasses, according to the riches of His grace."
+  },
+  {
+   "id": "v199",
+   "ref": "Colossians 1:13–14",
+   "theme": "identity",
+   "text": "He has rescued us from the dominion of darkness and brought us into the kingdom of His beloved Son, in whom we have redemption, the forgiveness of sins."
+  },
+  {
+   "id": "v200",
+   "ref": "1 John 4:4",
+   "theme": "identity",
+   "text": "You, little children, are from God and have overcome them, because greater is He who is in you than he who is in the world."
+  },
+  {
+   "id": "v201",
+   "ref": "Philippians 1:6",
+   "theme": "identity",
+   "text": "…being confident of this, that He who began a good work in you will carry it on to completion until the day of Christ Jesus."
+  },
+  {
+   "id": "v202",
+   "ref": "Jude 1:24",
+   "theme": "identity",
+   "text": "Now to Him who is able to keep you from stumbling and to present you unblemished in His glorious presence, with great joy."
+  },
+  {
+   "id": "v203",
+   "ref": "Isaiah 62:3",
+   "theme": "identity",
+   "text": "You will be a crown of glory in the hand of the LORD, a royal diadem in the palm of your God."
+  },
+  {
+   "id": "v204",
+   "ref": "Deuteronomy 7:6",
+   "theme": "identity",
+   "text": "For you are a people holy to the LORD your God. The LORD your God has chosen you to be a people for His prized possession out of all peoples on the face of the earth."
+  },
+  {
+   "id": "v205",
+   "ref": "Titus 3:4–7",
+   "theme": "identity",
+   "text": "But when the kindness of God our Savior and His love for mankind appeared, He saved us, not by the righteous deeds we had done, but according to His mercy, through the washing of new birth and renewal by the Holy Spirit. This is the Spirit He poured out on us abundantly through Jesus Christ our Savior, so that, having been justified by His grace, we would become heirs with the hope of eternal life."
+  },
+  {
+   "id": "v206",
+   "ref": "Philippians 4:13",
+   "theme": "strength",
+   "text": "I can do all things through Christ who gives me strength."
+  },
+  {
+   "id": "v207",
+   "ref": "Isaiah 40:29",
+   "theme": "strength",
+   "text": "He gives power to the faint and increases the strength of the weak."
+  },
+  {
+   "id": "v208",
+   "ref": "Psalm 46:1",
+   "theme": "strength",
+   "text": "God is our refuge and strength, an ever-present help in times of trouble."
+  },
+  {
+   "id": "v209",
+   "ref": "Ephesians 6:10",
+   "theme": "strength",
+   "text": "Finally, be strong in the Lord and in His mighty power."
+  },
+  {
+   "id": "v210",
+   "ref": "Nehemiah 8:10",
+   "theme": "strength",
+   "text": "Then Nehemiah told them, “Go and eat what is rich, drink what is sweet, and send out portions to those who have nothing prepared, since today is holy to our Lord. Do not grieve, for the joy of the LORD is your strength.”"
+  },
+  {
+   "id": "v211",
+   "ref": "2 Corinthians 4:16–18",
+   "theme": "strength",
+   "text": "Therefore we do not lose heart. Though our outer self is wasting away, yet our inner self is being renewed day by day. For our light and momentary affliction is producing for us an eternal weight of glory that is far beyond comparison. So we fix our eyes not on what is seen, but on what is unseen. For what is seen is temporary, but what is unseen is eternal."
+  },
+  {
+   "id": "v212",
+   "ref": "Isaiah 41:13",
+   "theme": "strength",
+   "text": "For I am the LORD your God, who takes hold of your right hand and tells you: Do not fear, I will help you."
+  },
+  {
+   "id": "v213",
+   "ref": "Psalm 73:26",
+   "theme": "strength",
+   "text": "My flesh and my heart may fail, but God is the strength of my heart and my portion forever."
+  },
+  {
+   "id": "v214",
+   "ref": "Psalm 18:32–33",
+   "theme": "strength",
+   "text": "It is God who arms me with strength and makes my way clear. He makes my feet like those of a deer and stations me upon the heights."
+  },
+  {
+   "id": "v215",
+   "ref": "Habakkuk 3:19",
+   "theme": "strength",
+   "text": "GOD the Lord is my strength; He makes my feet like those of a deer; He makes me walk upon the heights! For the choirmaster. With stringed instruments."
+  },
+  {
+   "id": "v216",
+   "ref": "Psalm 29:11",
+   "theme": "strength",
+   "text": "The LORD gives His people strength; the LORD blesses His people with peace."
+  },
+  {
+   "id": "v217",
+   "ref": "1 Corinthians 16:13",
+   "theme": "strength",
+   "text": "Be on the alert. Stand firm in the faith. Be men of courage. Be strong."
+  },
+  {
+   "id": "v218",
+   "ref": "Ephesians 3:16",
+   "theme": "strength",
+   "text": "I ask that out of the riches of His glory He may strengthen you with power through His Spirit in your inner being."
+  },
+  {
+   "id": "v219",
+   "ref": "Psalm 68:35",
+   "theme": "strength",
+   "text": "O God, You are awesome in Your sanctuary; the God of Israel Himself gives strength and power to His people. Blessed be God!"
+  },
+  {
+   "id": "v220",
+   "ref": "Exodus 15:2",
+   "theme": "strength",
+   "text": "The LORD is my strength and my song, and He has become my salvation. He is my God, and I will praise Him, my father’s God, and I will exalt Him."
+  },
+  {
+   "id": "v221",
+   "ref": "Psalm 59:16–17",
+   "theme": "strength",
+   "text": "But I will sing of Your strength and proclaim Your loving devotion in the morning. For You are my fortress, my refuge in times of trouble. To You, O my strength, I sing praises, for You, O God, are my fortress, my God of loving devotion."
+  },
+  {
+   "id": "v222",
+   "ref": "Isaiah 12:2",
+   "theme": "strength",
+   "text": "“Surely God is my salvation; I will trust and not be afraid. For the LORD GOD is my strength and my song, and He also has become my salvation.”"
+  },
+  {
+   "id": "v223",
+   "ref": "Joel 3:10",
+   "theme": "strength",
+   "text": "Beat your plowshares into swords and your pruning hooks into spears. Let the weak say, ‘I am strong!’"
+  },
+  {
+   "id": "v224",
+   "ref": "2 Samuel 22:33",
+   "theme": "strength",
+   "text": "God is my strong fortress and He makes my way clear."
+  },
+  {
+   "id": "v225",
+   "ref": "Psalm 138:3",
+   "theme": "strength",
+   "text": "On the day I called, You answered me; You emboldened me and strengthened my soul."
+  },
+  {
+   "id": "v226",
+   "ref": "Psalm 28:8",
+   "theme": "strength",
+   "text": "The LORD is the strength of His people, a stronghold of salvation for His anointed."
+  },
+  {
+   "id": "v227",
+   "ref": "Colossians 1:11",
+   "theme": "strength",
+   "text": "…being strengthened with all power according to His glorious might so that you may have full endurance and patience, and joyfully."
+  },
+  {
+   "id": "v228",
+   "ref": "2 Thessalonians 3:3",
+   "theme": "strength",
+   "text": "But the Lord is faithful, and He will strengthen you and guard you from the evil one."
+  },
+  {
+   "id": "v229",
+   "ref": "Psalm 31:24",
+   "theme": "strength",
+   "text": "Be strong and courageous, all you who hope in the LORD."
+  },
+  {
+   "id": "v230",
+   "ref": "Galatians 6:9",
+   "theme": "strength",
+   "text": "Let us not grow weary in well-doing, for in due time we will reap a harvest if we do not give up."
+  },
+  {
+   "id": "v231",
+   "ref": "Hebrews 12:1–2",
+   "theme": "strength",
+   "text": "Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off every encumbrance and the sin that so easily entangles, and let us run with endurance the race set out for us. Let us fix our eyes on Jesus, the author and perfecter of our faith, who for the joy set before Him endured the cross, scorning its shame, and sat down at the right hand of the throne of God."
+  },
+  {
+   "id": "v232",
+   "ref": "James 1:2–4",
+   "theme": "strength",
+   "text": "Consider it pure joy, my brothers, when you encounter trials of many kinds, because you know that the testing of your faith develops perseverance. Allow perseverance to finish its work, so that you may be mature and complete, not lacking anything."
+  },
+  {
+   "id": "v233",
+   "ref": "Romans 5:3–5",
+   "theme": "strength",
+   "text": "Not only that, but we also rejoice in our sufferings, because we know that suffering produces perseverance; perseverance, character; and character, hope. And hope does not disappoint us, because God has poured out His love into our hearts through the Holy Spirit, whom He has given us."
+  },
+  {
+   "id": "v234",
+   "ref": "1 Corinthians 10:13",
+   "theme": "strength",
+   "text": "No temptation has seized you except what is common to man. And God is faithful; He will not let you be tempted beyond what you can bear. But when you are tempted, He will also provide an escape, so that you can stand up under it."
+  },
+  {
+   "id": "v235",
+   "ref": "Isaiah 54:17",
+   "theme": "strength",
+   "text": "“No weapon formed against you shall prosper, and you will refute every tongue that accuses you. This is the heritage of the servants of the LORD, and their vindication is from Me,” declares the LORD."
+  },
+  {
+   "id": "v236",
+   "ref": "John 14:27",
+   "theme": "peace",
+   "text": "Peace I leave with you; My peace I give to you. I do not give to you as the world gives. Do not let your hearts be troubled; do not be afraid."
+  },
+  {
+   "id": "v237",
+   "ref": "Philippians 4:7",
+   "theme": "peace",
+   "text": "And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+  },
+  {
+   "id": "v238",
+   "ref": "Psalm 4:8",
+   "theme": "peace",
+   "text": "I will lie down and sleep in peace, for You alone, O LORD, make me dwell in safety."
+  },
+  {
+   "id": "v239",
+   "ref": "John 16:33",
+   "theme": "peace",
+   "text": "“I have told you these things so that in Me you may have peace. In the world you will have tribulation. But take courage; I have overcome the world!”"
+  },
+  {
+   "id": "v240",
+   "ref": "Romans 12:18",
+   "theme": "peace",
+   "text": "If it is possible on your part, live at peace with everyone."
+  },
+  {
+   "id": "v241",
+   "ref": "Psalm 34:14",
+   "theme": "peace",
+   "text": "Turn away from evil and do good; seek peace and pursue it."
+  },
+  {
+   "id": "v242",
+   "ref": "Isaiah 9:6",
+   "theme": "peace",
+   "text": "For unto us a child is born, unto us a son is given, and the government will be upon His shoulders. And He will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace."
+  },
+  {
+   "id": "v243",
+   "ref": "Colossians 3:15",
+   "theme": "peace",
+   "text": "Let the peace of Christ rule in your hearts, for to this you were called as members of one body. And be thankful."
+  },
+  {
+   "id": "v244",
+   "ref": "Numbers 6:24–26",
+   "theme": "peace",
+   "text": "‘May the LORD bless you and keep you; may the LORD cause His face to shine upon you and be gracious to you; may the LORD lift up His countenance toward you and give you peace.’"
+  },
+  {
+   "id": "v245",
+   "ref": "2 Thessalonians 3:16",
+   "theme": "peace",
+   "text": "Now may the Lord of peace Himself give you peace at all times and in every way. The Lord be with all of you."
+  },
+  {
+   "id": "v246",
+   "ref": "Psalm 119:165",
+   "theme": "peace",
+   "text": "Abundant peace belongs to those who love Your law; nothing can make them stumble."
+  },
+  {
+   "id": "v247",
+   "ref": "Isaiah 32:17",
+   "theme": "peace",
+   "text": "The work of righteousness will be peace; the service of righteousness will be quiet confidence forever."
+  },
+  {
+   "id": "v248",
+   "ref": "Romans 5:1",
+   "theme": "peace",
+   "text": "Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ."
+  },
+  {
+   "id": "v249",
+   "ref": "Psalm 85:8",
+   "theme": "peace",
+   "text": "I will listen to what God the LORD will say; for He will surely speak peace to His people and His saints; He will not let them return to folly."
+  },
+  {
+   "id": "v250",
+   "ref": "Proverbs 14:30",
+   "theme": "peace",
+   "text": "A tranquil heart is life to the body, but envy rots the bones."
+  },
+  {
+   "id": "v251",
+   "ref": "Matthew 5:9",
+   "theme": "peace",
+   "text": "Blessed are the peacemakers, for they will be called sons of God."
+  },
+  {
+   "id": "v252",
+   "ref": "Psalm 37:11",
+   "theme": "peace",
+   "text": "But the meek will inherit the land and delight in abundant prosperity."
+  },
+  {
+   "id": "v253",
+   "ref": "Isaiah 55:12",
+   "theme": "peace",
+   "text": "You will indeed go out with joy and be led forth in peace; the mountains and hills will burst into song before you, and all the trees of the field will clap their hands."
+  },
+  {
+   "id": "v254",
+   "ref": "Psalm 131:2",
+   "theme": "peace",
+   "text": "Surely I have stilled and quieted my soul; like a weaned child with his mother, like a weaned child is my soul within me."
+  },
+  {
+   "id": "v255",
+   "ref": "Luke 2:14",
+   "theme": "peace",
+   "text": "“Glory to God in the highest, and on earth peace to men on whom His favor rests!”"
+  },
+  {
+   "id": "v256",
+   "ref": "Hebrews 12:14",
+   "theme": "peace",
+   "text": "Pursue peace with everyone, as well as holiness, without which no one will see the Lord."
+  },
+  {
+   "id": "v257",
+   "ref": "James 3:18",
+   "theme": "peace",
+   "text": "Peacemakers who sow in peace reap the fruit of righteousness."
+  },
+  {
+   "id": "v258",
+   "ref": "Psalm 122:6–7",
+   "theme": "peace",
+   "text": "Pray for the peace of Jerusalem: “May those who love you prosper. May there be peace within your walls, and prosperity inside your fortresses.”"
+  },
+  {
+   "id": "v259",
+   "ref": "1 Corinthians 13:4–7",
+   "theme": "love-and-others",
+   "text": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It is not rude, it is not self-seeking, it is not easily angered, it keeps no account of wrongs. Love takes no pleasure in evil, but rejoices in the truth. It bears all things, believes all things, hopes all things, endures all things."
+  },
+  {
+   "id": "v260",
+   "ref": "John 13:34–35",
+   "theme": "love-and-others",
+   "text": "“A new commandment I give you: Love one another. As I have loved you, so you also must love one another. By this everyone will know that you are My disciples, if you love one another.”"
+  },
+  {
+   "id": "v261",
+   "ref": "1 John 4:7–8",
+   "theme": "love-and-others",
+   "text": "Beloved, let us love one another, because love comes from God. Everyone who loves has been born of God and knows God. Whoever does not love does not know God, because God is love."
+  },
+  {
+   "id": "v262",
+   "ref": "1 John 4:19",
+   "theme": "love-and-others",
+   "text": "We love because He first loved us."
+  },
+  {
+   "id": "v263",
+   "ref": "Romans 12:9–10",
+   "theme": "love-and-others",
+   "text": "Love must be sincere. Detest what is evil; cling to what is good. Be devoted to one another in brotherly love. Outdo yourselves in honoring one another."
+  },
+  {
+   "id": "v264",
+   "ref": "Matthew 22:39",
+   "theme": "love-and-others",
+   "text": "And the second is like it: ‘Love your neighbor as yourself.’"
+  },
+  {
+   "id": "v265",
+   "ref": "Galatians 5:13–14",
+   "theme": "love-and-others",
+   "text": "For you, brothers, were called to freedom; but do not use your freedom as an opportunity for the flesh. Rather, serve one another in love. The entire law is fulfilled in a single decree: “Love your neighbor as yourself.”"
+  },
+  {
+   "id": "v266",
+   "ref": "Colossians 3:13–14",
+   "theme": "love-and-others",
+   "text": "Bear with one another and forgive any complaint you may have against someone else. Forgive as the Lord forgave you. And over all these virtues put on love, which is the bond of perfect unity."
+  },
+  {
+   "id": "v267",
+   "ref": "Ephesians 4:2–3",
+   "theme": "love-and-others",
+   "text": "…with all humility and gentleness, with patience, bearing with one another in love, and with diligence to preserve the unity of the Spirit through the bond of peace."
+  },
+  {
+   "id": "v268",
+   "ref": "Ephesians 4:32",
+   "theme": "love-and-others",
+   "text": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you."
+  },
+  {
+   "id": "v269",
+   "ref": "1 Peter 4:8",
+   "theme": "love-and-others",
+   "text": "Above all, love one another deeply, because love covers over a multitude of sins."
+  },
+  {
+   "id": "v270",
+   "ref": "Proverbs 17:17",
+   "theme": "love-and-others",
+   "text": "A friend loves at all times, and a brother is born for adversity."
+  },
+  {
+   "id": "v271",
+   "ref": "Romans 13:8",
+   "theme": "love-and-others",
+   "text": "Be indebted to no one, except to one another in love. For he who loves his neighbor has fulfilled the law."
+  },
+  {
+   "id": "v272",
+   "ref": "1 John 3:18",
+   "theme": "love-and-others",
+   "text": "Little children, let us love not in word and speech, but in action and truth."
+  },
+  {
+   "id": "v273",
+   "ref": "John 15:12–13",
+   "theme": "love-and-others",
+   "text": "This is My commandment, that you love one another as I have loved you. Greater love has no one than this, that he lay down his life for his friends."
+  },
+  {
+   "id": "v274",
+   "ref": "Galatians 6:2",
+   "theme": "love-and-others",
+   "text": "Carry one another’s burdens, and in this way you will fulfill the law of Christ."
+  },
+  {
+   "id": "v275",
+   "ref": "Hebrews 10:24–25",
+   "theme": "love-and-others",
+   "text": "And let us consider how to spur one another on to love and good deeds. Let us not neglect meeting together, as some have made a habit, but let us encourage one another, and all the more as you see the Day approaching."
+  },
+  {
+   "id": "v276",
+   "ref": "Proverbs 3:27",
+   "theme": "love-and-others",
+   "text": "Do not withhold good from the deserving when it is within your power to act."
+  },
+  {
+   "id": "v277",
+   "ref": "Matthew 25:40",
+   "theme": "love-and-others",
+   "text": "And the King will reply, ‘Truly I tell you, whatever you did for one of the least of these brothers of Mine, you did for Me.’"
+  },
+  {
+   "id": "v278",
+   "ref": "Luke 6:31",
+   "theme": "love-and-others",
+   "text": "Do to others as you would have them do to you."
+  },
+  {
+   "id": "v279",
+   "ref": "Luke 6:38",
+   "theme": "love-and-others",
+   "text": "“Give, and it will be given to you. A good measure, pressed down, shaken together, and running over will be poured into your lap. For with the measure you use, it will be measured back to you.”"
+  },
+  {
+   "id": "v280",
+   "ref": "Proverbs 19:17",
+   "theme": "love-and-others",
+   "text": "Kindness to the poor is a loan to the LORD, and He will repay the lender."
+  },
+  {
+   "id": "v281",
+   "ref": "1 Thessalonians 5:11",
+   "theme": "love-and-others",
+   "text": "Therefore encourage and build one another up, just as you are already doing."
+  },
+  {
+   "id": "v282",
+   "ref": "Romans 15:5–7",
+   "theme": "love-and-others",
+   "text": "Now may the God who gives endurance and encouragement grant you harmony with one another in Christ Jesus, so that with one mind and one voice you may glorify the God and Father of our Lord Jesus Christ. Accept one another, then, just as Christ accepted you, in order to bring glory to God."
+  },
+  {
+   "id": "v283",
+   "ref": "Colossians 3:23–24",
+   "theme": "work-and-provision",
+   "text": "Whatever you do, work at it with your whole being, for the Lord and not for men, because you know that you will receive an inheritance from the Lord as your reward. It is the Lord Christ you are serving."
+  },
+  {
+   "id": "v284",
+   "ref": "Psalm 90:17",
+   "theme": "work-and-provision",
+   "text": "May the favor of the Lord our God rest upon us; establish for us the work of our hands— yes, establish the work of our hands!"
+  },
+  {
+   "id": "v285",
+   "ref": "Philippians 4:19",
+   "theme": "work-and-provision",
+   "text": "And my God will supply all your needs according to His glorious riches in Christ Jesus."
+  },
+  {
+   "id": "v286",
+   "ref": "Matthew 6:26",
+   "theme": "work-and-provision",
+   "text": "Look at the birds of the air: They do not sow or reap or gather into barns—and yet your heavenly Father feeds them. Are you not much more valuable than they?"
+  },
+  {
+   "id": "v287",
+   "ref": "Proverbs 10:4",
+   "theme": "work-and-provision",
+   "text": "Idle hands make one poor, but diligent hands bring wealth."
+  },
+  {
+   "id": "v288",
+   "ref": "Proverbs 22:29",
+   "theme": "work-and-provision",
+   "text": "Do you see a man skilled in his work? He will be stationed in the presence of kings; he will not stand before obscure men."
+  },
+  {
+   "id": "v289",
+   "ref": "Ecclesiastes 9:10",
+   "theme": "work-and-provision",
+   "text": "Whatever you find to do with your hands, do it with all your might, for in Sheol, where you are going, there is no work or planning or knowledge or wisdom."
+  },
+  {
+   "id": "v290",
+   "ref": "2 Corinthians 9:8",
+   "theme": "work-and-provision",
+   "text": "And God is able to make all grace abound to you, so that in all things, at all times, having all that you need, you will abound in every good work."
+  },
+  {
+   "id": "v291",
+   "ref": "Deuteronomy 8:18",
+   "theme": "work-and-provision",
+   "text": "But remember that it is the LORD your God who gives you the power to gain wealth, in order to confirm His covenant that He swore to your fathers even to this day."
+  },
+  {
+   "id": "v292",
+   "ref": "Malachi 3:10",
+   "theme": "work-and-provision",
+   "text": "Bring the full tithe into the storehouse, so that there may be food in My house. Test Me in this,” says the LORD of Hosts. “See if I will not open the windows of heaven and pour out for you blessing without measure."
+  },
+  {
+   "id": "v293",
+   "ref": "Psalm 37:25",
+   "theme": "work-and-provision",
+   "text": "I once was young and now am old, yet never have I seen the righteous abandoned or their children begging for bread."
+  },
+  {
+   "id": "v294",
+   "ref": "Proverbs 13:11",
+   "theme": "work-and-provision",
+   "text": "Dishonest wealth will dwindle, but what is earned through hard work will be multiplied."
+  },
+  {
+   "id": "v295",
+   "ref": "Proverbs 21:20",
+   "theme": "work-and-provision",
+   "text": "Precious treasures and oil are in the dwelling of the wise, but a foolish man consumes them."
+  },
+  {
+   "id": "v296",
+   "ref": "Luke 16:10",
+   "theme": "work-and-provision",
+   "text": "Whoever is faithful with very little will also be faithful with much, and whoever is dishonest with very little will also be dishonest with much."
+  },
+  {
+   "id": "v297",
+   "ref": "Proverbs 14:23",
+   "theme": "work-and-provision",
+   "text": "There is profit in all labor, but mere talk leads only to poverty."
+  },
+  {
+   "id": "v298",
+   "ref": "1 Timothy 6:17–19",
+   "theme": "work-and-provision",
+   "text": "Instruct those who are rich in the present age not to be conceited and not to put their hope in the uncertainty of wealth, but in God, who richly provides all things for us to enjoy. Instruct them to do good, to be rich in good works, and to be generous and ready to share, treasuring up for themselves a firm foundation for the future, so that they may take hold of that which is truly life."
+  },
+  {
+   "id": "v299",
+   "ref": "Matthew 25:21",
+   "theme": "work-and-provision",
+   "text": "His master replied, ‘Well done, good and faithful servant! You have been faithful with a few things; I will put you in charge of many things. Enter into the joy of your master!’"
+  },
+  {
+   "id": "v300",
+   "ref": "Proverbs 11:25",
+   "theme": "work-and-provision",
+   "text": "A generous soul will prosper, and he who refreshes others will himself be refreshed."
+  },
+  {
+   "id": "v301",
+   "ref": "2 Thessalonians 3:10",
+   "theme": "work-and-provision",
+   "text": "For even while we were with you, we gave you this command: “If anyone is unwilling to work, he shall not eat.”"
+  },
+  {
+   "id": "v302",
+   "ref": "Proverbs 12:11",
+   "theme": "work-and-provision",
+   "text": "The one who works his land will have plenty of food, but whoever chases fantasies lacks judgment."
+  },
+  {
+   "id": "v303",
+   "ref": "Psalm 128:1–2",
+   "theme": "work-and-provision",
+   "text": "Blessed are all who fear the LORD, who walk in His ways! For when you eat the fruit of your labor, blessings and prosperity will be yours."
+  },
+  {
+   "id": "v304",
+   "ref": "Proverbs 6:6–8",
+   "theme": "work-and-provision",
+   "text": "Walk in the manner of the ant, O slacker; observe its ways and become wise. Without a commander, without an overseer or ruler, it prepares its provisions in summer; it gathers its food at harvest."
+  },
+  {
+   "id": "v305",
+   "ref": "Luke 12:15",
+   "theme": "work-and-provision",
+   "text": "And He said to them, “Watch out! Guard yourselves against every form of greed, for one’s life does not consist in the abundance of his possessions.”"
+  },
+  {
+   "id": "v306",
+   "ref": "Hebrews 13:5",
+   "theme": "work-and-provision",
+   "text": "Keep your lives free from the love of money and be content with what you have, for God has said: “Never will I leave you, never will I forsake you.”"
+  },
+  {
+   "id": "v307",
+   "ref": "Philippians 4:11–13",
+   "theme": "work-and-provision",
+   "text": "I am not saying this out of need, for I have learned to be content regardless of my circumstances. I know how to live humbly, and I know how to abound. I am accustomed to any and every situation—to being filled and being hungry, to having plenty and having need. I can do all things through Christ who gives me strength."
+  },
+  {
+   "id": "v308",
+   "ref": "Proverbs 15:16",
+   "theme": "work-and-provision",
+   "text": "Better a little with the fear of the LORD than great treasure with turmoil."
+  },
+  {
+   "id": "v309",
+   "ref": "Ecclesiastes 5:19",
+   "theme": "work-and-provision",
+   "text": "Furthermore, God has given riches and wealth to every man, and He has enabled him to enjoy them, to accept his lot, and to rejoice in his labor. This is a gift from God."
+  },
+  {
+   "id": "v310",
+   "ref": "Psalm 1:1–3",
+   "theme": "work-and-provision",
+   "text": "Blessed is the man who does not walk in the counsel of the wicked, or set foot on the path of sinners, or sit in the seat of mockers. But his delight is in the Law of the LORD, and on His law he meditates day and night. He is like a tree planted by streams of water, yielding its fruit in season, whose leaf does not wither, and who prospers in all he does."
+  },
+  {
+   "id": "v311",
+   "ref": "Psalm 37:23",
+   "theme": "guidance",
+   "text": "The steps of a man are ordered by the LORD who takes delight in his journey."
+  },
+  {
+   "id": "v312",
+   "ref": "Isaiah 58:11",
+   "theme": "guidance",
+   "text": "The LORD will always guide you; He will satisfy you in a sun-scorched land and strengthen your frame. You will be like a well-watered garden, like a spring whose waters never fail."
+  },
+  {
+   "id": "v313",
+   "ref": "John 10:27",
+   "theme": "guidance",
+   "text": "My sheep listen to My voice; I know them, and they follow Me."
+  },
+  {
+   "id": "v314",
+   "ref": "Psalm 48:14",
+   "theme": "guidance",
+   "text": "For this God is our God forever and ever; He will be our guide even till death."
+  },
+  {
+   "id": "v315",
+   "ref": "Psalm 73:24",
+   "theme": "guidance",
+   "text": "You guide me with Your counsel, and later receive me in glory."
+  },
+  {
+   "id": "v316",
+   "ref": "Romans 8:14",
+   "theme": "guidance",
+   "text": "For all who are led by the Spirit of God are sons of God."
+  },
+  {
+   "id": "v317",
+   "ref": "Isaiah 42:16",
+   "theme": "guidance",
+   "text": "I will lead the blind by a way they did not know; I will guide them on unfamiliar paths. I will turn darkness into light before them and rough places into level ground. These things I will do for them, and I will not forsake them."
+  },
+  {
+   "id": "v318",
+   "ref": "Psalm 143:10",
+   "theme": "guidance",
+   "text": "Teach me to do Your will, for You are my God. May Your good Spirit lead me on level ground."
+  },
+  {
+   "id": "v319",
+   "ref": "Psalm 23:3",
+   "theme": "guidance",
+   "text": "He restores my soul; He guides me in the paths of righteousness for the sake of His name."
+  },
+  {
+   "id": "v320",
+   "ref": "Exodus 33:14",
+   "theme": "guidance",
+   "text": "And the LORD answered, “My Presence will go with you, and I will give you rest.”"
+  },
+  {
+   "id": "v321",
+   "ref": "Jeremiah 33:3",
+   "theme": "guidance",
+   "text": "Call to Me, and I will answer and show you great and unsearchable things you do not know."
+  },
+  {
+   "id": "v322",
+   "ref": "Psalm 16:11",
+   "theme": "guidance",
+   "text": "You have made known to me the path of life; You will fill me with joy in Your presence, with eternal pleasures at Your right hand."
+  },
+  {
+   "id": "v323",
+   "ref": "Isaiah 48:17",
+   "theme": "guidance",
+   "text": "Thus says the LORD your Redeemer, the Holy One of Israel: “I am the LORD your God, who teaches you for your benefit, who directs you in the way you should go.”"
+  },
+  {
+   "id": "v324",
+   "ref": "Nehemiah 9:19",
+   "theme": "guidance",
+   "text": "You in Your great compassion did not forsake them in the wilderness. By day the pillar of cloud never turned away from guiding them on their path; and by the night the pillar of fire illuminated the way they should go."
+  },
+  {
+   "id": "v325",
+   "ref": "Psalm 25:12",
+   "theme": "guidance",
+   "text": "Who is the man who fears the LORD? He will instruct him in the path chosen for him."
+  },
+  {
+   "id": "v326",
+   "ref": "Proverbs 11:3",
+   "theme": "guidance",
+   "text": "The integrity of the upright guides them, but the perversity of the faithless destroys them."
+  },
+  {
+   "id": "v327",
+   "ref": "Psalm 119:133",
+   "theme": "guidance",
+   "text": "Order my steps in Your word; let no sin rule over me."
+  },
+  {
+   "id": "v328",
+   "ref": "Hebrews 11:1",
+   "theme": "faith",
+   "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see."
+  },
+  {
+   "id": "v329",
+   "ref": "Hebrews 11:6",
+   "theme": "faith",
+   "text": "And without faith it is impossible to please God, because anyone who approaches Him must believe that He exists and that He rewards those who earnestly seek Him."
+  },
+  {
+   "id": "v330",
+   "ref": "2 Corinthians 5:7",
+   "theme": "faith",
+   "text": "For we walk by faith, not by sight."
+  },
+  {
+   "id": "v331",
+   "ref": "Romans 10:17",
+   "theme": "faith",
+   "text": "Consequently, faith comes by hearing, and hearing by the word of Christ."
+  },
+  {
+   "id": "v332",
+   "ref": "Mark 11:22–24",
+   "theme": "faith",
+   "text": "“Have faith in God,” Jesus said to them. “Truly I tell you that if anyone says to this mountain, ‘Be lifted up and thrown into the sea,’ and has no doubt in his heart but believes that it will happen, it will be done for him. Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours.”"
+  },
+  {
+   "id": "v333",
+   "ref": "Mark 9:23",
+   "theme": "faith",
+   "text": "“If You can?” echoed Jesus. “All things are possible to him who believes!”"
+  },
+  {
+   "id": "v334",
+   "ref": "Matthew 17:20",
+   "theme": "faith",
+   "text": "“Because you have so little faith,” He answered. “For truly I tell you, if you have faith the size of a mustard seed, you can say to this mountain, ‘Move from here to there,’ and it will move. Nothing will be impossible for you.”"
+  },
+  {
+   "id": "v335",
+   "ref": "James 1:6",
+   "theme": "faith",
+   "text": "But he must ask in faith, without doubting, because he who doubts is like a wave of the sea, blown and tossed by the wind."
+  },
+  {
+   "id": "v336",
+   "ref": "Romans 4:20–21",
+   "theme": "faith",
+   "text": "Yet he did not waver through disbelief in the promise of God, but was strengthened in his faith and gave glory to God, being fully persuaded that God was able to do what He had promised."
+  },
+  {
+   "id": "v337",
+   "ref": "Ephesians 2:8–9",
+   "theme": "faith",
+   "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast."
+  },
+  {
+   "id": "v338",
+   "ref": "1 Peter 1:8–9",
+   "theme": "faith",
+   "text": "Though you have not seen Him, you love Him; and though you do not see Him now, you believe in Him and rejoice with an inexpressible and glorious joy, now that you are receiving the goal of your faith, the salvation of your souls."
+  },
+  {
+   "id": "v339",
+   "ref": "Hebrews 10:23",
+   "theme": "faith",
+   "text": "Let us hold resolutely to the hope we profess, for He who promised is faithful."
+  },
+  {
+   "id": "v340",
+   "ref": "Luke 1:37",
+   "theme": "faith",
+   "text": "“For no word from God will ever fail.”"
+  },
+  {
+   "id": "v341",
+   "ref": "Matthew 21:22",
+   "theme": "faith",
+   "text": "“If you believe, you will receive whatever you ask for in prayer.”"
+  },
+  {
+   "id": "v342",
+   "ref": "Romans 1:17",
+   "theme": "faith",
+   "text": "For the gospel reveals the righteousness of God that comes by faith from start to finish, just as it is written: “The righteous will live by faith.”"
+  },
+  {
+   "id": "v343",
+   "ref": "2 Timothy 4:7",
+   "theme": "faith",
+   "text": "I have fought the good fight, I have finished the race, I have kept the faith."
+  },
+  {
+   "id": "v344",
+   "ref": "1 John 5:4",
+   "theme": "faith",
+   "text": "…because everyone born of God overcomes the world. And this is the victory that has overcome the world: our faith."
+  },
+  {
+   "id": "v345",
+   "ref": "Habakkuk 2:4",
+   "theme": "faith",
+   "text": "Look at the proud one; his soul is not upright— but the righteous will live by faith."
+  },
+  {
+   "id": "v346",
+   "ref": "John 20:29",
+   "theme": "faith",
+   "text": "Jesus said to him, “Because you have seen Me, you have believed; blessed are those who have not seen and yet have believed.”"
+  },
+  {
+   "id": "v347",
+   "ref": "Ephesians 6:16",
+   "theme": "faith",
+   "text": "In addition to all this, take up the shield of faith, with which you can extinguish all the flaming arrows of the evil one."
+  },
+  {
+   "id": "v348",
+   "ref": "Hebrews 11:8",
+   "theme": "faith",
+   "text": "By faith Abraham, when called to go to a place he would later receive as his inheritance, obeyed and went, without knowing where he was going."
+  },
+  {
+   "id": "v349",
+   "ref": "James 2:17",
+   "theme": "faith",
+   "text": "So too, faith by itself, if it does not result in action, is dead."
+  },
+  {
+   "id": "v350",
+   "ref": "1 Corinthians 2:5",
+   "theme": "faith",
+   "text": "…so that your faith would not rest on men’s wisdom, but on God’s power."
+  },
+  {
+   "id": "v351",
+   "ref": "2 Corinthians 1:20",
+   "theme": "faith",
+   "text": "For all the promises of God are “Yes” in Christ. And so through Him, our “Amen” is spoken to the glory of God."
+  },
+  {
+   "id": "v352",
+   "ref": "Psalm 23:2–3",
+   "theme": "rest",
+   "text": "He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul; He guides me in the paths of righteousness for the sake of His name."
+  },
+  {
+   "id": "v353",
+   "ref": "Psalm 127:2",
+   "theme": "rest",
+   "text": "In vain you rise early and stay up late, toiling for bread to eat— for He gives sleep to His beloved."
+  },
+  {
+   "id": "v354",
+   "ref": "Hebrews 4:9–11",
+   "theme": "rest",
+   "text": "There remains, then, a Sabbath rest for the people of God. For whoever enters God’s rest also rests from his own work, just as God did from His. Let us, therefore, make every effort to enter that rest, so that no one will fall by following the same pattern of disobedience."
+  },
+  {
+   "id": "v355",
+   "ref": "Mark 6:31",
+   "theme": "rest",
+   "text": "And He said to them, “Come with Me privately to a solitary place, and let us rest for a while.” For many people were coming and going, and they did not even have time to eat."
+  },
+  {
+   "id": "v356",
+   "ref": "Psalm 62:1–2",
+   "theme": "rest",
+   "text": "In God alone my soul finds rest; my salvation comes from Him. He alone is my rock and my salvation. He is my fortress; I will never be shaken."
+  },
+  {
+   "id": "v357",
+   "ref": "Psalm 116:7",
+   "theme": "rest",
+   "text": "Return to your rest, O my soul, for the LORD has been good to you."
+  },
+  {
+   "id": "v358",
+   "ref": "Jeremiah 31:25",
+   "theme": "rest",
+   "text": "“for I will refresh the weary soul and replenish all who are weak.”"
+  },
+  {
+   "id": "v359",
+   "ref": "Genesis 2:2–3",
+   "theme": "rest",
+   "text": "And by the seventh day God had finished the work He had been doing; so on that day He rested from all His work. Then God blessed the seventh day and sanctified it, because on that day He rested from all the work of creation that He had accomplished."
+  },
+  {
+   "id": "v360",
+   "ref": "Isaiah 40:31",
+   "theme": "rest",
+   "text": "But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint."
+  },
+  {
+   "id": "v361",
+   "ref": "Psalm 55:22",
+   "theme": "rest",
+   "text": "Cast your burden upon the LORD and He will sustain you; He will never let the righteous be shaken."
+  },
+  {
+   "id": "v362",
+   "ref": "Matthew 6:31–33",
+   "theme": "rest",
+   "text": "Therefore do not worry, saying, ‘What shall we eat?’ or ‘What shall we drink?’ or ‘What shall we wear?’ For the Gentiles strive after all these things, and your heavenly Father knows that you need them. But seek first the kingdom of God and His righteousness, and all these things will be added unto you."
+  },
+  {
+   "id": "v363",
+   "ref": "Exodus 20:8–10",
+   "theme": "rest",
+   "text": "Remember the Sabbath day by keeping it holy. Six days you shall labor and do all your work, but the seventh day is a Sabbath to the LORD your God, on which you must not do any work—neither you, nor your son or daughter, nor your manservant or maidservant or livestock, nor the foreigner within your gates."
+  },
+  {
+   "id": "v364",
+   "ref": "Lamentations 3:25–26",
+   "theme": "rest",
+   "text": "The LORD is good to those who wait for Him, to the soul who seeks Him. It is good to wait quietly for the salvation of the LORD."
+  },
+  {
+   "id": "v365",
+   "ref": "Psalm 91:1",
+   "theme": "rest",
+   "text": "He who dwells in the shelter of the Most High will abide in the shadow of the Almighty."
+  },
+  {
+   "id": "v366",
+   "ref": "1 Samuel 7:12",
+   "theme": "remembrance",
+   "text": "Afterward, Samuel took a stone and set it up between Mizpah and Shen. He named it Ebenezer, saying, “Thus far the LORD has helped us.”"
+  },
+  {
+   "id": "v367",
+   "ref": "Deuteronomy 8:2",
+   "theme": "remembrance",
+   "text": "Remember that these forty years the LORD your God led you all the way in the wilderness, so that He might humble you and test you in order to know what was in your heart, whether or not you would keep His commandments."
+  },
+  {
+   "id": "v368",
+   "ref": "Psalm 77:11–12",
+   "theme": "remembrance",
+   "text": "I will remember the works of the LORD; yes, I will remember Your wonders of old. I will reflect on all You have done and ponder Your mighty deeds."
+  },
+  {
+   "id": "v369",
+   "ref": "Psalm 103:2",
+   "theme": "remembrance",
+   "text": "Bless the LORD, O my soul, and do not forget all His kind deeds."
+  },
+  {
+   "id": "v370",
+   "ref": "Joshua 4:6–7",
+   "theme": "remembrance",
+   "text": "“to serve as a sign among you. In the future, when your children ask, ‘What do these stones mean to you?’ you are to tell them, ‘The waters of the Jordan were cut off before the ark of the covenant of the LORD. When it crossed the Jordan, the waters were cut off.’ Therefore these stones will be a memorial to the Israelites forever.”"
+  },
+  {
+   "id": "v371",
+   "ref": "Psalm 105:5",
+   "theme": "remembrance",
+   "text": "Remember the wonders He has done, His marvels, and the judgments He has pronounced."
+  },
+  {
+   "id": "v372",
+   "ref": "Lamentations 3:21–23",
+   "theme": "remembrance",
+   "text": "Yet I call this to mind, and therefore I have hope: Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!"
+  },
+  {
+   "id": "v373",
+   "ref": "Isaiah 46:9",
+   "theme": "remembrance",
+   "text": "Remember what happened long ago, for I am God, and there is no other; I am God, and there is none like Me."
+  },
+  {
+   "id": "v374",
+   "ref": "Deuteronomy 6:12",
+   "theme": "remembrance",
+   "text": "…be careful not to forget the LORD who brought you out of the land of Egypt, out of the house of slavery."
+  },
+  {
+   "id": "v375",
+   "ref": "Psalm 143:5",
+   "theme": "remembrance",
+   "text": "I remember the days of old; I meditate on all Your works; I consider the work of Your hands."
+  },
+  {
+   "id": "v376",
+   "ref": "Psalm 111:4",
+   "theme": "remembrance",
+   "text": "He has caused His wonders to be remembered; the LORD is gracious and compassionate."
+  },
+  {
+   "id": "v377",
+   "ref": "Psalm 78:4",
+   "theme": "remembrance",
+   "text": "We will not hide them from their children, but will declare to the next generation the praises of the LORD and His might, and the wonders He has performed."
+  },
+  {
+   "id": "v378",
+   "ref": "Luke 1:49",
+   "theme": "remembrance",
+   "text": "For the Mighty One has done great things for me. Holy is His name."
+  },
+  {
+   "id": "v379",
+   "ref": "Psalm 40:5",
+   "theme": "remembrance",
+   "text": "Many, O LORD my God, are the wonders You have done, and the plans You have for us— none can compare to You— if I proclaim and declare them, they are more than I can count."
+  },
+  {
+   "id": "v380",
+   "ref": "Psalm 126:3",
+   "theme": "remembrance",
+   "text": "The LORD has done great things for us; we are filled with joy."
+  },
+  {
+   "id": "v381",
+   "ref": "1 Chronicles 16:12",
+   "theme": "remembrance",
+   "text": "Remember the wonders He has done, His marvels, and the judgments He has pronounced."
+  },
+  {
+   "id": "v382",
+   "ref": "Deuteronomy 4:9",
+   "theme": "remembrance",
+   "text": "Only be on your guard and diligently watch yourselves, so that you do not forget the things your eyes have seen, and so that they do not slip from your heart as long as you live. Teach them to your children and grandchildren."
+  },
+  {
+   "id": "v383",
+   "ref": "Psalm 66:16",
+   "theme": "remembrance",
+   "text": "Come and listen, all you who fear God, and I will declare what He has done for me."
+  },
+  {
+   "id": "v384",
+   "ref": "Revelation 12:11",
+   "theme": "remembrance",
+   "text": "They have conquered him by the blood of the Lamb and by the word of their testimony. And they did not love their lives so as to shy away from death."
+  },
+  {
+   "id": "v385",
+   "ref": "Psalm 71:17–18",
+   "theme": "remembrance",
+   "text": "O God, You have taught me from my youth, and to this day I proclaim Your marvelous deeds. Even when I am old and gray, do not forsake me, O God, until I proclaim Your power to the next generation, Your might to all who are to come."
+  }
+ ]
+}

@@ -1,0 +1,1124 @@
+{
+  "app": "Gratideo",
+  "version": 1,
+  "translation": "Berean Standard Bible (BSB), public domain",
+  "themes": [
+    {
+      "id": "foundation",
+      "name": "Foundation",
+      "about": "The confession that frames all the others."
+    },
+    {
+      "id": "jesus-first",
+      "name": "Jesus First",
+      "about": "Dependence, trust and humility: He is the source, not my strength."
+    },
+    {
+      "id": "identity",
+      "name": "Who I Am in Christ",
+      "about": "What God says is true of me."
+    },
+    {
+      "id": "faith-words",
+      "name": "Faith and My Words",
+      "about": "Why I speak the Word aloud, and what it does."
+    },
+    {
+      "id": "victory",
+      "name": "Strength and Victory",
+      "about": "Standing in His strength and authority."
+    },
+    {
+      "id": "healing",
+      "name": "Healing and Life",
+      "about": "His Word as life and health."
+    },
+    {
+      "id": "protection",
+      "name": "Protection",
+      "about": "His shelter over my day."
+    },
+    {
+      "id": "provision",
+      "name": "Provision and the Work of My Hands",
+      "about": "Supply, household and work, under His Lordship."
+    },
+    {
+      "id": "wisdom",
+      "name": "Wisdom and Guidance",
+      "about": "Hearing Him before I decide."
+    }
+  ],
+  "sets": [
+    {
+      "id": "reign",
+      "name": "Confessions to Reign in Life",
+      "ids": [
+        "c10",
+        "c11",
+        "c31",
+        "c34",
+        "c35",
+        "c44",
+        "c52",
+        "c12",
+        "c58",
+        "c50",
+        "c40",
+        "c39",
+        "c42"
+      ]
+    }
+  ],
+  "confessions": [
+    {
+      "id": "c01",
+      "theme": "foundation",
+      "title": "What God Says",
+      "type": "confession",
+      "confession": "I am who God says I am. I have what God says I have. I can do what God says I can do. I believe His Word, so I speak it.",
+      "short": "I am who God says I am.",
+      "scripture": [
+        {
+          "ref": "2 Corinthians 4:13",
+          "text": "And in keeping with what is written: “I believed, therefore I have spoken,” we who have the same spirit of faith also believe and therefore speak."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c02",
+      "theme": "jesus-first",
+      "title": "Jesus Is My Everything",
+      "type": "confession",
+      "confession": "Jesus is my everything. For me, to live is Christ, and He comes first in my day, my plans and my heart.",
+      "short": "Jesus is my everything.",
+      "scripture": [
+        {
+          "ref": "Philippians 1:21",
+          "text": "For to me, to live is Christ, and to die is gain."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c03",
+      "theme": "jesus-first",
+      "title": "Jesus Is My Source",
+      "type": "confession",
+      "confession": "Jesus is my source. I remain in Him as a branch remains in the vine, and I bear fruit, because apart from Him I can do nothing.",
+      "short": "Apart from Him I can do nothing.",
+      "scripture": [
+        {
+          "ref": "John 15:5",
+          "text": "I am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c04",
+      "theme": "jesus-first",
+      "title": "The Lord Is With Me",
+      "type": "confession",
+      "confession": "The Lord is with me, so I will not fear. He strengthens me, helps me and upholds me with His righteous right hand.",
+      "short": "The Lord is with me; I will not fear.",
+      "scripture": [
+        {
+          "ref": "Isaiah 41:10",
+          "text": "Do not fear, for I am with you; do not be afraid, for I am your God. I will strengthen you; I will surely help you; I will uphold you with My right hand of righteousness."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c05",
+      "theme": "jesus-first",
+      "title": "Jesus Is For Me",
+      "type": "confession",
+      "confession": "Jesus is for me. If God is for me, who can be against me?",
+      "short": "If God is for me, who can be against me?",
+      "scripture": [
+        {
+          "ref": "Romans 8:31",
+          "text": "What then shall we say in response to these things? If God is for us, who can be against us?"
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c06",
+      "theme": "jesus-first",
+      "title": "My Shield and My Help",
+      "type": "confession",
+      "confession": "The Lord is my strength and my shield, my ever-present help in times of trouble. My heart trusts in Him, and I am helped.",
+      "short": "The Lord is my shield and my help.",
+      "scripture": [
+        {
+          "ref": "Psalm 28:7",
+          "text": "The LORD is my strength and my shield; my heart trusts in Him, and I am helped. Therefore my heart rejoices, and I give thanks to Him with my song."
+        },
+        {
+          "ref": "Psalm 46:1",
+          "text": "God is our refuge and strength, an ever-present help in times of trouble."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c07",
+      "theme": "jesus-first",
+      "title": "My Trust Is in the Lord",
+      "type": "confession",
+      "confession": "I put my trust in the LORD, and my confidence is in Him. I am blessed because I lean on Him, not on my own strength.",
+      "short": "My confidence is in the LORD.",
+      "scripture": [
+        {
+          "ref": "Jeremiah 17:7",
+          "text": "But blessed is the man who trusts in the LORD, whose confidence is in Him."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c08",
+      "theme": "jesus-first",
+      "title": "Planted by the Water",
+      "type": "confession",
+      "confession": "I delight in God’s Word and meditate on it day and night. Like a tree planted by streams of water, I bear fruit in season and prosper in all I do.",
+      "short": "I am planted by streams of water.",
+      "scripture": [
+        {
+          "ref": "Psalm 1:1–3",
+          "text": "Blessed is the man who does not walk in the counsel of the wicked, or set foot on the path of sinners, or sit in the seat of mockers. But his delight is in the Law of the LORD, and on His law he meditates day and night. He is like a tree planted by streams of water, yielding its fruit in season, whose leaf does not wither, and who prospers in all he does."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c09",
+      "theme": "jesus-first",
+      "title": "Humble Under His Hand",
+      "type": "confession",
+      "confession": "I humble myself under God’s mighty hand, and He lifts me up in His time. I cast every care on Him, because He cares for me.",
+      "short": "I cast every care on Him.",
+      "scripture": [
+        {
+          "ref": "1 Peter 5:6–7",
+          "text": "Humble yourselves, therefore, under God’s mighty hand, so that in due time He may exalt you. Cast all your anxiety on Him, because He cares for you."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c10",
+      "theme": "identity",
+      "title": "A New Creation",
+      "type": "confession",
+      "confession": "I am in Christ, so I am a new creation. The old has passed away; the new has come.",
+      "short": "In Christ, I am a new creation.",
+      "scripture": [
+        {
+          "ref": "2 Corinthians 5:17",
+          "text": "Therefore if anyone is in Christ, he is a new creation. The old has passed away. Behold, the new has come!"
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c11",
+      "theme": "identity",
+      "title": "The Righteousness of God",
+      "type": "confession",
+      "confession": "Jesus, who knew no sin, became sin for me, so that in Him I have become the righteousness of God.",
+      "short": "I am the righteousness of God in Christ.",
+      "scripture": [
+        {
+          "ref": "2 Corinthians 5:21",
+          "text": "God made Him who knew no sin to be sin on our behalf, so that in Him we might become the righteousness of God."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c12",
+      "theme": "identity",
+      "title": "Deeply Loved",
+      "type": "confession",
+      "confession": "I am deeply loved. God has poured out His love into my heart through the Holy Spirit, and my hope will not disappoint me.",
+      "short": "I am deeply loved by God.",
+      "scripture": [
+        {
+          "ref": "Romans 5:5",
+          "text": "And hope does not disappoint us, because God has poured out His love into our hearts through the Holy Spirit, whom He has given us."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c13",
+      "theme": "identity",
+      "title": "Accepted in the Beloved",
+      "type": "confession",
+      "confession": "I am accepted in the Beloved. God has freely given me His glorious grace in Jesus, the One He loves.",
+      "short": "I am accepted in the Beloved.",
+      "scripture": [
+        {
+          "ref": "Ephesians 1:6",
+          "text": "…to the praise of His glorious grace, which He has freely given us in the Beloved One."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c14",
+      "theme": "identity",
+      "title": "A Child of God",
+      "type": "confession",
+      "confession": "I am a child of the Most High God. I am led by the Spirit of God, and I belong to Him.",
+      "short": "I am a child of the Most High.",
+      "scripture": [
+        {
+          "ref": "Romans 8:14",
+          "text": "For all who are led by the Spirit of God are sons of God."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c15",
+      "theme": "identity",
+      "title": "Redeemed and Forgiven",
+      "type": "confession",
+      "confession": "In Jesus I have redemption through His blood and the forgiveness of my sins, according to the riches of His grace.",
+      "short": "I am redeemed and forgiven.",
+      "scripture": [
+        {
+          "ref": "Ephesians 1:7",
+          "text": "In Him we have redemption through His blood, the forgiveness of our trespasses, according to the riches of His grace."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c16",
+      "theme": "identity",
+      "title": "Rescued Into His Kingdom",
+      "type": "confession",
+      "confession": "God has rescued me from the dominion of darkness and brought me into the kingdom of His beloved Son.",
+      "short": "I belong to the kingdom of His Son.",
+      "scripture": [
+        {
+          "ref": "Colossians 1:13",
+          "text": "He has rescued us from the dominion of darkness and brought us into the kingdom of His beloved Son."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c17",
+      "theme": "identity",
+      "title": "Complete in Him",
+      "type": "confession",
+      "confession": "I am complete in Christ. He is the head over every ruler and authority.",
+      "short": "I am complete in Christ.",
+      "scripture": [
+        {
+          "ref": "Colossians 2:10",
+          "text": "And you have been made complete in Christ, who is the head over every ruler and authority."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c18",
+      "theme": "identity",
+      "title": "No Condemnation",
+      "type": "confession",
+      "confession": "There is now no condemnation for me, because I am in Christ Jesus.",
+      "short": "There is no condemnation for me in Christ.",
+      "scripture": [
+        {
+          "ref": "Romans 8:1",
+          "text": "Therefore, there is now no condemnation for those who are in Christ Jesus."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c19",
+      "theme": "identity",
+      "title": "Bold Access",
+      "type": "confession",
+      "confession": "In Jesus and through faith in Him, I come into God’s presence with boldness and confidence.",
+      "short": "I come before God with confidence.",
+      "scripture": [
+        {
+          "ref": "Ephesians 3:12",
+          "text": "In Him and through faith in Him we may enter God’s presence with boldness and confidence."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c20",
+      "theme": "identity",
+      "title": "Highly Favored",
+      "type": "confession",
+      "confession": "I am highly favored. The LORD blesses the righteous and surrounds me with the shield of His favor.",
+      "short": "His favor surrounds me like a shield.",
+      "scripture": [
+        {
+          "ref": "Psalm 5:12",
+          "text": "For surely You, O LORD, bless the righteous; You surround them with the shield of Your favor."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c21",
+      "theme": "faith-words",
+      "title": "The Word in My Mouth",
+      "type": "confession",
+      "confession": "The word of faith is near me. It is in my mouth and in my heart, and I speak it today.",
+      "short": "His Word is in my mouth and my heart.",
+      "scripture": [
+        {
+          "ref": "Romans 10:8",
+          "text": "But what does it say? “The word is near you; it is in your mouth and in your heart,” that is, the word of faith we are proclaiming."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c22",
+      "theme": "faith-words",
+      "title": "Jesus Is Lord",
+      "type": "confession",
+      "confession": "I confess with my mouth that Jesus is Lord, and I believe in my heart that God raised Him from the dead. I am saved.",
+      "short": "Jesus is Lord of my life.",
+      "scripture": [
+        {
+          "ref": "Romans 10:9–10",
+          "text": "…that if you confess with your mouth, “Jesus is Lord,” and believe in your heart that God raised Him from the dead, you will be saved. For with your heart you believe and are justified, and with your mouth you confess and are saved."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c23",
+      "theme": "faith-words",
+      "title": "Words of Life",
+      "type": "confession",
+      "confession": "Life and death are in the power of my tongue, so I choose to speak life over myself, my family and my work.",
+      "short": "I speak life, not death.",
+      "scripture": [
+        {
+          "ref": "Proverbs 18:21",
+          "text": "Life and death are in the power of the tongue, and those who love it will eat its fruit."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c24",
+      "theme": "faith-words",
+      "title": "Mountains Move",
+      "type": "confession",
+      "confession": "I speak to the mountain in front of me without doubting in my heart, and I believe that what I say will happen.",
+      "short": "I speak to my mountain in faith.",
+      "scripture": [
+        {
+          "ref": "Mark 11:23",
+          "text": "“Truly I tell you that if anyone says to this mountain, ‘Be lifted up and thrown into the sea,’ and has no doubt in his heart but believes that it will happen, it will be done for him.”"
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c25",
+      "theme": "faith-words",
+      "title": "I Believe I Receive",
+      "type": "confession",
+      "confession": "Whatever I ask for in prayer, I believe that I have received it, and it will be mine.",
+      "short": "I pray, I believe, I receive.",
+      "scripture": [
+        {
+          "ref": "Mark 11:24",
+          "text": "Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c26",
+      "theme": "faith-words",
+      "title": "He Who Promised Is Faithful",
+      "type": "confession",
+      "confession": "I hold firmly to the hope I profess, because He who promised is faithful.",
+      "short": "He who promised is faithful.",
+      "scripture": [
+        {
+          "ref": "Hebrews 10:23",
+          "text": "Let us hold resolutely to the hope we profess, for He who promised is faithful."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c27",
+      "theme": "faith-words",
+      "title": "Day and Night",
+      "type": "confession",
+      "confession": "God’s Word does not depart from my mouth. I meditate on it day and night and do what it says, and I prosper and succeed.",
+      "short": "I meditate on His Word day and night.",
+      "scripture": [
+        {
+          "ref": "Joshua 1:8",
+          "text": "This Book of the Law must not depart from your mouth; meditate on it day and night, so that you may be careful to do everything written in it. For then you will prosper and succeed in all you do."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c28",
+      "theme": "faith-words",
+      "title": "By Faith, Not Sight",
+      "type": "confession",
+      "confession": "I walk by faith, not by sight. I trust what God has said more than what I see.",
+      "short": "I walk by faith, not by sight.",
+      "scripture": [
+        {
+          "ref": "2 Corinthians 5:7",
+          "text": "For we walk by faith, not by sight."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c29",
+      "theme": "faith-words",
+      "title": "The Assurance of Faith",
+      "type": "confession",
+      "confession": "My faith is the assurance of what I hope for and the certainty of what I do not yet see.",
+      "short": "I am certain of what I cannot see.",
+      "scripture": [
+        {
+          "ref": "Hebrews 11:1",
+          "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c30",
+      "theme": "faith-words",
+      "title": "Faith Comes by Hearing",
+      "type": "confession",
+      "confession": "My faith grows as I hear the word of Christ, so I speak His Word aloud and let it fill my ears and my mind.",
+      "short": "Faith comes by hearing His Word.",
+      "scripture": [
+        {
+          "ref": "Romans 10:17",
+          "text": "Consequently, faith comes by hearing, and hearing by the word of Christ."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c31",
+      "theme": "victory",
+      "title": "Strong in the Lord",
+      "type": "confession",
+      "confession": "I am strong in the Lord and in His mighty power.",
+      "short": "I am strong in the Lord.",
+      "scripture": [
+        {
+          "ref": "Ephesians 6:10",
+          "text": "Finally, be strong in the Lord and in His mighty power."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c32",
+      "theme": "victory",
+      "title": "Through Christ",
+      "type": "confession",
+      "confession": "I can do all things through Christ, who gives me strength.",
+      "short": "Christ gives me strength.",
+      "scripture": [
+        {
+          "ref": "Philippians 4:13",
+          "text": "I can do all things through Christ who gives me strength."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c33",
+      "theme": "victory",
+      "title": "Power, Love and Self-Control",
+      "type": "confession",
+      "confession": "God has not given me a spirit of fear, but of power, love and self-control.",
+      "short": "I have power, love and self-control.",
+      "scripture": [
+        {
+          "ref": "2 Timothy 1:7",
+          "text": "For God has not given us a spirit of fear, but of power, love, and self-control."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c34",
+      "theme": "victory",
+      "title": "Greater Is He",
+      "type": "confession",
+      "confession": "I am from God, and I overcome, because greater is He who is in me than he who is in the world.",
+      "short": "Greater is He who is in me.",
+      "scripture": [
+        {
+          "ref": "1 John 4:4",
+          "text": "You, little children, are from God and have overcome them, because greater is He who is in you than he who is in the world."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c35",
+      "theme": "victory",
+      "title": "Authority Over the Enemy",
+      "type": "confession",
+      "confession": "Jesus has given me authority over all the power of the enemy. Nothing will harm me.",
+      "short": "Nothing will harm me.",
+      "scripture": [
+        {
+          "ref": "Luke 10:19",
+          "text": "Behold, I have given you authority to tread on snakes and scorpions, and over all the power of the enemy. Nothing will harm you."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c36",
+      "theme": "victory",
+      "title": "All Authority Is His",
+      "type": "confession",
+      "confession": "All authority in heaven and on earth belongs to Jesus, and I stand in His authority today.",
+      "short": "All authority belongs to Jesus.",
+      "scripture": [
+        {
+          "ref": "Matthew 28:18",
+          "text": "Then Jesus came to them and said, “All authority in heaven and on earth has been given to Me.”"
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c37",
+      "theme": "victory",
+      "title": "Bound and Loosed",
+      "type": "confession",
+      "confession": "What I bind on earth is bound in heaven, and what I loose on earth is loosed in heaven.",
+      "short": "I bind and loose in Jesus’ name.",
+      "scripture": [
+        {
+          "ref": "Matthew 18:18",
+          "text": "Truly I tell you, whatever you bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c38",
+      "theme": "victory",
+      "title": "Resist and He Flees",
+      "type": "confession",
+      "confession": "I submit myself to God. I resist the devil, and he flees from me.",
+      "short": "I resist the devil, and he flees.",
+      "scripture": [
+        {
+          "ref": "James 4:7",
+          "text": "Submit yourselves, then, to God. Resist the devil, and he will flee from you."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c39",
+      "theme": "victory",
+      "title": "Seated With Christ",
+      "type": "confession",
+      "confession": "God raised me up with Christ and seated me with Him in the heavenly realms in Christ Jesus.",
+      "short": "I am seated with Christ.",
+      "scripture": [
+        {
+          "ref": "Ephesians 2:6",
+          "text": "And God raised us up with Christ and seated us with Him in the heavenly realms in Christ Jesus."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c40",
+      "theme": "victory",
+      "title": "I Reign in Life",
+      "type": "confession",
+      "confession": "I receive the abundance of grace and the gift of righteousness, and I reign in life through Jesus Christ.",
+      "short": "I reign in life through Jesus.",
+      "scripture": [
+        {
+          "ref": "Romans 5:17",
+          "text": "For if, by the trespass of the one man, death reigned through that one man, how much more will those who receive an abundance of grace and of the gift of righteousness reign in life through the one man, Jesus Christ!"
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c41",
+      "theme": "victory",
+      "title": "More Than a Conqueror",
+      "type": "confession",
+      "confession": "In all these things I am more than a conqueror through Him who loves me.",
+      "short": "I am more than a conqueror.",
+      "scripture": [
+        {
+          "ref": "Romans 8:37",
+          "text": "No, in all these things we are more than conquerors through Him who loved us."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c42",
+      "theme": "victory",
+      "title": "The Word of My Testimony",
+      "type": "confession",
+      "confession": "I overcome the enemy by the blood of the Lamb and by the word of my testimony.",
+      "short": "I overcome by the blood of the Lamb.",
+      "scripture": [
+        {
+          "ref": "Revelation 12:11",
+          "text": "They have conquered him by the blood of the Lamb and by the word of their testimony. And they did not love their lives so as to shy away from death."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c43",
+      "theme": "victory",
+      "title": "Led in Triumph",
+      "type": "confession",
+      "confession": "Thanks be to God, who always leads me in triumph in Christ and spreads the fragrance of knowing Him through me wherever I go.",
+      "short": "God always leads me in triumph.",
+      "scripture": [
+        {
+          "ref": "2 Corinthians 2:14",
+          "text": "But thanks be to God, who always leads us triumphantly as captives in Christ and through us spreads everywhere the fragrance of the knowledge of Him."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c44",
+      "theme": "healing",
+      "title": "By His Stripes",
+      "type": "confession",
+      "confession": "Jesus bore my sins in His body on the cross. He was pierced for my transgressions, and by His stripes I am healed.",
+      "short": "By His stripes I am healed.",
+      "scripture": [
+        {
+          "ref": "Isaiah 53:5",
+          "text": "But He was pierced for our transgressions, He was crushed for our iniquities; the punishment that brought us peace was upon Him, and by His stripes we are healed."
+        },
+        {
+          "ref": "1 Peter 2:24",
+          "text": "He Himself bore our sins in His body on the tree, so that we might die to sin and live to righteousness. “By His stripes you are healed.”"
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c45",
+      "theme": "healing",
+      "title": "Health to My Body",
+      "type": "confession",
+      "confession": "I pay attention to God’s words and keep them in my heart. They are life to me and health to my whole body.",
+      "short": "His Word is health to my body.",
+      "scripture": [
+        {
+          "ref": "Proverbs 4:20–22",
+          "text": "My son, pay attention to my words; incline your ear to my sayings. Do not lose sight of them; keep them within your heart. For they are life to those who find them, and health to the whole body."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c46",
+      "theme": "healing",
+      "title": "He Sent His Word",
+      "type": "confession",
+      "confession": "God sends His Word and heals me. He rescues my life from the pit.",
+      "short": "He sent His Word and healed me.",
+      "scripture": [
+        {
+          "ref": "Psalm 107:20",
+          "text": "He sent forth His word and healed them; He rescued them from the Pit."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c47",
+      "theme": "healing",
+      "title": "Life in My Body",
+      "type": "confession",
+      "confession": "The Spirit of Him who raised Jesus from the dead lives in me and gives life to my mortal body.",
+      "short": "His Spirit gives life to my body.",
+      "scripture": [
+        {
+          "ref": "Romans 8:11",
+          "text": "And if the Spirit of Him who raised Jesus from the dead is living in you, He who raised Christ Jesus from the dead will also give life to your mortal bodies through His Spirit, who lives in you."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c48",
+      "theme": "healing",
+      "title": "Forget Not His Benefits",
+      "type": "confession",
+      "confession": "I bless the LORD with all that is within me, and I do not forget His kindness. He forgives all my sins and heals all my diseases.",
+      "short": "I will not forget His kindness.",
+      "scripture": [
+        {
+          "ref": "Psalm 103:1–3",
+          "text": "Bless the LORD, O my soul; all that is within me, bless His holy name. Bless the LORD, O my soul, and do not forget all His kind deeds— He who forgives all your iniquities and heals all your diseases."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c49",
+      "theme": "protection",
+      "title": "In His Shelter",
+      "type": "confession",
+      "confession": "I dwell in the shelter of the Most High and rest in the shadow of the Almighty. The LORD is my refuge and my fortress, and He commands His angels to guard me in all my ways.",
+      "short": "The LORD is my refuge and my fortress.",
+      "scripture": [
+        {
+          "ref": "Psalm 91:1–2",
+          "text": "He who dwells in the shelter of the Most High will abide in the shadow of the Almighty. I will say to the LORD, “You are my refuge and my fortress, my God, in whom I trust.”"
+        },
+        {
+          "ref": "Psalm 91:10–11",
+          "text": "…no evil will befall you, no plague will approach your tent. For He will command His angels concerning you to guard you in all your ways."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c50",
+      "theme": "protection",
+      "title": "No Weapon Formed",
+      "type": "confession",
+      "confession": "No weapon formed against me shall prosper, and I refute every tongue that accuses me. This is my heritage as a servant of the LORD.",
+      "short": "No weapon formed against me shall prosper.",
+      "scripture": [
+        {
+          "ref": "Isaiah 54:17",
+          "text": "“No weapon formed against you shall prosper, and you will refute every tongue that accuses you. This is the heritage of the servants of the LORD, and their vindication is from Me,” declares the LORD."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c51",
+      "theme": "protection",
+      "title": "He Commands the Morning",
+      "type": "confession",
+      "confession": "The Lord who commands the morning and gives the dawn its place orders my day. I give Him this day first.",
+      "short": "The Lord orders my day.",
+      "scripture": [
+        {
+          "ref": "Job 38:12",
+          "text": "In your days, have you commanded the morning or assigned the dawn its place?"
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c52",
+      "theme": "provision",
+      "title": "Lord of My Livelihood",
+      "type": "confession",
+      "confession": "Jesus is Lord over my life and my livelihood. The LORD is my shepherd; I shall not want. My God supplies all my needs according to His glorious riches in Christ Jesus.",
+      "short": "The LORD is my shepherd; I shall not want.",
+      "scripture": [
+        {
+          "ref": "Psalm 23:1",
+          "text": "The LORD is my shepherd; I shall not want."
+        },
+        {
+          "ref": "Philippians 4:19",
+          "text": "And my God will supply all your needs according to His glorious riches in Christ Jesus."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c53",
+      "theme": "provision",
+      "title": "Abundantly Blessed",
+      "type": "confession",
+      "confession": "I am abundantly blessed. God makes all grace abound to me, so that in all things, at all times, I have all I need and abound in every good work.",
+      "short": "God’s grace abounds to me.",
+      "scripture": [
+        {
+          "ref": "2 Corinthians 9:8",
+          "text": "And God is able to make all grace abound to you, so that in all things, at all times, having all that you need, you will abound in every good work."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c54",
+      "theme": "provision",
+      "title": "Life to the Full",
+      "type": "confession",
+      "confession": "Jesus came so that I may have life, and have it in all its fullness. The thief has no claim on what is His.",
+      "short": "Jesus gives me life in all its fullness.",
+      "scripture": [
+        {
+          "ref": "John 10:10",
+          "text": "The thief comes only to steal and kill and destroy. I have come that they may have life, and have it in all its fullness."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c55",
+      "theme": "provision",
+      "title": "A Blessed Household",
+      "type": "confession",
+      "confession": "I fear the LORD and delight in His commands. My children will be mighty in the land, and wealth and riches are in my house.",
+      "short": "My household is blessed.",
+      "scripture": [
+        {
+          "ref": "Psalm 112:1–3",
+          "text": "Hallelujah! Blessed is the man who fears the LORD, who greatly delights in His commandments. His descendants will be mighty in the land; the generation of the upright will be blessed. Wealth and riches are in his house, and his righteousness endures forever."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c56",
+      "theme": "provision",
+      "title": "The Work of My Hands",
+      "type": "confession",
+      "confession": "The favor of the Lord my God rests on me. He establishes the work of my hands and blesses everything I put my hand to.",
+      "short": "He establishes the work of my hands.",
+      "scripture": [
+        {
+          "ref": "Psalm 90:17",
+          "text": "May the favor of the Lord our God rest upon us; establish for us the work of our hands— yes, establish the work of our hands!"
+        },
+        {
+          "ref": "Deuteronomy 28:12",
+          "text": "The LORD will open the heavens, His abundant storehouse, to send rain on your land in season and to bless all the work of your hands. You will lend to many nations, but borrow from none."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c57",
+      "theme": "provision",
+      "title": "Open Doors",
+      "type": "confession",
+      "confession": "In Jesus’ name I walk through open doors that no one can shut. Supply flows, delays dissolve, and the LORD surrounds me with His favor.",
+      "short": "I walk through doors no one can shut.",
+      "scripture": [
+        {
+          "ref": "Revelation 3:8",
+          "text": "I know your deeds. See, I have placed before you an open door, which no one can shut. For you have only a little strength, yet you have kept My word and have not denied My name."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    },
+    {
+      "id": "c58",
+      "theme": "wisdom",
+      "title": "The Spirit Guides Me",
+      "type": "confession",
+      "confession": "The Spirit of truth guides me into all truth. He tells me what is to come, and I follow His lead.",
+      "short": "The Spirit of truth guides me.",
+      "scripture": [
+        {
+          "ref": "John 16:13",
+          "text": "However, when the Spirit of truth comes, He will guide you into all truth. For He will not speak on His own, but He will speak what He hears, and He will declare to you what is to come."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [
+        "reign"
+      ],
+      "editable": true
+    },
+    {
+      "id": "c59",
+      "theme": "wisdom",
+      "title": "Spirit of Wisdom and Revelation",
+      "type": "prayer",
+      "confession": "I keep asking that the God of my Lord Jesus Christ, the glorious Father, give me a spirit of wisdom and revelation, so that I may know Him better.\n\nI pray that the eyes of my heart may be enlightened, so that I may know the hope of His calling, the riches of His glorious inheritance in His people, and the surpassing greatness of His power toward me, because I believe.\n\nThat power is the same mighty strength He exerted in Christ when He raised Him from the dead and seated Him at His right hand in the heavenly realms, far above all rule and authority, power and dominion, and every name that is named, not only in this age but also in the one to come.\n\nGod put everything under His feet and made Him head over everything for the church, which is His body, the fullness of Him who fills all in all. Amen.",
+      "short": "I ask for wisdom and revelation to know Him better.",
+      "scripture": [
+        {
+          "ref": "Ephesians 1:17–23",
+          "text": "…that the God of our Lord Jesus Christ, the glorious Father, may give you a spirit of wisdom and revelation in your knowledge of Him. I ask that the eyes of your heart may be enlightened, so that you may know the hope of His calling, the riches of His glorious inheritance in the saints, and the surpassing greatness of His power to us who believe. These are in accordance with the working of His mighty strength, which He exerted in Christ when He raised Him from the dead and seated Him at His right hand in the heavenly realms, far above all rule and authority, power and dominion, and every name that is named, not only in the present age but also in the one to come. And God put everything under His feet and made Him head over everything for the church, which is His body, the fullness of Him who fills all in all."
+        }
+      ],
+      "translation": "BSB",
+      "sets": [],
+      "editable": true
+    }
+  ]
+}

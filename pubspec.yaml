@@ -1,0 +1,42 @@
+name: gratideo
+description: Gratideo. The daily rhythm for leaders who put God first.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.4
+  shared_preferences: ^2.3.2
+  just_audio: ^0.9.40
+  just_audio_background: ^0.0.1-beta.13
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+  flutter_timezone: ^3.0.1
+  in_app_purchase: ^3.2.0
+  intl: ^0.19.0
+  flutter_animate: ^4.5.0
+  flutter_tts: ^4.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/confessions.json
+    - assets/data/verses.json
+    - assets/audio/gentle-rain-and-stream.ogg
+    - assets/audio/gentle-rain-and-stream.m4a
+    - assets/audio/deep-solitude-432.ogg
+    - assets/audio/deep-solitude-432.m4a
+    - assets/audio/morning-meadow-wind.ogg
+    - assets/audio/morning-meadow-wind.m4a
