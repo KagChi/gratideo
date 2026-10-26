@@ -1,5 +1,7 @@
 # Gratideo
 
+[![Android APK](https://github.com/KagChi/gratideo/actions/workflows/android.yml/badge.svg)](https://github.com/KagChi/gratideo/actions/workflows/android.yml)
+
 The daily rhythm for leaders who put God first. Flutter, Android first, iOS from the same code.
 
 ## CI: APK from GitHub Actions
