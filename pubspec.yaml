@@ -22,8 +22,7 @@ dependencies:
   in_app_purchase: ^3.2.0
   intl: ^0.19.0
   flutter_animate: ^4.5.0
-  # Pinned: 4.2.x carries Kotlin 2.2 metadata, which Flutter 3.24's Kotlin 1.8 cannot read.
-  flutter_tts: 4.0.2
+  flutter_tts: ^4.0.2
 
 dev_dependencies:
   flutter_test:
