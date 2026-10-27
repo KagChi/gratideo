@@ -3,18 +3,22 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'data/settings.dart';
+import 'screens/auth_screen.dart';
 import 'screens/journal_screen.dart';
 import 'screens/prayers_screen.dart';
 import 'screens/remember_screen.dart';
 import 'screens/selah_screen.dart';
 import 'screens/thanks_screen.dart';
 import 'screens/today_screen.dart';
+import 'services/auth.dart';
 import 'theme/gratideo_theme.dart';
+import 'widgets/auth_scope.dart';
 import 'widgets/scope.dart';
 
 class GratideoApp extends StatefulWidget {
-  const GratideoApp({super.key, required this.settings});
+  const GratideoApp({super.key, required this.settings, required this.auth});
   final Settings settings;
+  final AuthService auth;
 
   @override
   State<GratideoApp> createState() => _GratideoAppState();
@@ -27,6 +31,7 @@ class _GratideoAppState extends State<GratideoApp> {
   void initState() {
     super.initState();
     widget.settings.addListener(_refresh);
+    widget.auth.addListener(_refresh);
     // Re-evaluate day/night once a minute so the switch happens on time.
     _clock = Timer.periodic(const Duration(minutes: 1), (_) => _refresh());
   }
@@ -36,6 +41,7 @@ class _GratideoAppState extends State<GratideoApp> {
   @override
   void dispose() {
     widget.settings.removeListener(_refresh);
+    widget.auth.removeListener(_refresh);
     _clock?.cancel();
     super.dispose();
   }
@@ -43,13 +49,16 @@ class _GratideoAppState extends State<GratideoApp> {
   @override
   Widget build(BuildContext context) {
     final colors = colorsFor(DateTime.now(), widget.settings.themeMode);
-    return SettingsScope(
-      settings: widget.settings,
-      child: MaterialApp(
-        title: 'Gratideo',
-        debugShowCheckedModeBanner: false,
-        theme: buildTheme(colors),
-        home: const HomeShell(),
+    return AuthScope(
+      auth: widget.auth,
+      child: SettingsScope(
+        settings: widget.settings,
+        child: MaterialApp(
+          title: 'Gratideo',
+          debugShowCheckedModeBanner: false,
+          theme: buildTheme(colors),
+          home: widget.auth.isSignedIn ? const HomeShell() : AuthScreen(auth: widget.auth),
+        ),
       ),
     );
   }

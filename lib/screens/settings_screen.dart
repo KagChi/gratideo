@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../services/reminders.dart';
 import '../theme/gratideo_theme.dart';
 import '../widgets/common.dart';
+import '../widgets/auth_scope.dart';
 import '../widgets/scope.dart';
 import 'confessions_screen.dart';
 
@@ -24,6 +25,7 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final g = context.g;
     final s = SettingsScope.of(context);
+    final auth = AuthScope.of(context);
     final nameC = TextEditingController(text: s.name);
     Widget row(String title, String value, VoidCallback onTap, {VoidCallback? onOff}) => ListTile(
           contentPadding: EdgeInsets.zero,
@@ -43,6 +45,23 @@ class SettingsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(24, 0, 24, 40),
         children: [
+          const SectionLabel('Account'),
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: Icon(Icons.account_circle_outlined, color: g.goldText),
+            title: Text(auth.email, style: context.body),
+            subtitle: Text('Signed in on this device', style: context.small),
+          ),
+          ListTile(
+            contentPadding: EdgeInsets.zero,
+            leading: Icon(Icons.logout_rounded, color: g.muted),
+            title: Text('Sign out', style: context.body),
+            onTap: () async {
+              Navigator.of(context).pop();
+              await auth.signOut();
+            },
+          ),
+          const SizedBox(height: 18),
           const SectionLabel('Your name'),
           const SizedBox(height: 8),
           TextField(

@@ -20,7 +20,7 @@ class Reminders {
     tzdata.initializeTimeZones();
     try {
       final name = await FlutterTimezone.getLocalTimezone();
-      tz.setLocalLocation(tz.getLocation(name));
+      tz.setLocalLocation(tz.getLocation(name.identifier));
     } catch (_) {
       // falls back to UTC; schedules still fire at the stored local offsets
     }

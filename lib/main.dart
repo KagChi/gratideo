@@ -4,6 +4,7 @@ import 'package:just_audio_background/just_audio_background.dart';
 import 'app.dart';
 import 'data/content.dart';
 import 'data/settings.dart';
+import 'services/auth.dart';
 import 'services/purchases.dart';
 import 'services/reminders.dart';
 import 'services/soundscape.dart';
@@ -16,11 +17,15 @@ Future<void> main() async {
     androidNotificationOngoing: true,
   );
   final settings = await Settings.load();
+  final auth = await LocalAuthService.load(settings);
   await Content.instance.load();
-  await Soundscape.instance.init(modeId: settings.sound, volume: settings.volume);
+  await Soundscape.instance.init(
+    modeId: settings.sound,
+    volume: settings.volume,
+  );
   await Reminders.instance.init();
   // Not awaited: the store can be slow and must never block first paint.
   Purchases.instance.init(settings);
   Reminders.instance.schedule(settings);
-  runApp(GratideoApp(settings: settings));
+  runApp(GratideoApp(settings: settings, auth: auth));
 }

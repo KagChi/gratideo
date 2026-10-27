@@ -12,9 +12,6 @@ echo "2/4  Applying the Android overlay (manifest + MainActivity)"
 mkdir -p android/app/src/main/kotlin/com/isaacmunandar/gratideo
 cp android_overlay/app/src/main/AndroidManifest.xml android/app/src/main/AndroidManifest.xml
 cp android_overlay/app/src/main/kotlin/com/isaacmunandar/gratideo/MainActivity.kt android/app/src/main/kotlin/com/isaacmunandar/gratideo/MainActivity.kt
-# flutter create drops its counter-sample test in, which fails to compile against
-# this app. Our real tests live in test/content_test.dart.
-rm -f test/widget_test.dart
 
 echo "3/4  Patching android/app/build.gradle(.kts): minSdk 23 + core library desugaring"
 python3 - <<'PY'

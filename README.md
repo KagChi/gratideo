@@ -7,7 +7,7 @@ The daily rhythm for leaders who put God first. Flutter, Android first, iOS from
 ## CI: APK from GitHub Actions
 
 Every push to `main`, every pull request, and manual runs build a release APK on
-GitHub's runners (workflow: `.github/workflows/android.yml`, Flutter 3.38.10, JDK 17).
+GitHub's runners (workflow: `.github/workflows/android.yml`, Flutter 3.47.8, JDK 17).
 Download it from the run's **Artifacts** section, or install it directly on a phone.
 
 Pushing a tag like `v0.1.0` also builds the Play Store `.aab` and attaches both files
