@@ -30,6 +30,11 @@ The pull cursor is `synced_at`, stamped by the Worker when a row is accepted, so
 with a wrong clock still receives everything. `serverTime` in the response is that
 cursor: send it back as `since` next time.
 
+Pulls are paged, not dumped: each response carries at most `pageSize` rows per table
+(`100` by default, `200` max) plus `cursors` and `hasMore`. Send `cursors` back to get the
+next page; stop when `hasMore` is false. Cursors are opaque per-table strings, and an
+unreadable one is rejected with 400.
+
 ## Local work
 
 ```sh

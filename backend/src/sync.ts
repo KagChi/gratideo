@@ -8,8 +8,10 @@ import { fail, readJson } from "./types";
 const timestamp = z.string().min(10).max(40);
 const maybeTimestamp = timestamp.nullable().optional();
 const uuid = z.string().min(8).max(64);
-const MAX_ROWS = 200;
-const PULL_LIMIT = 2000;
+
+const DEFAULT_PAGE_SIZE = 100;
+const MAX_PAGE_SIZE = 200;
+const EPOCH = "1970-01-01T00:00:00.000Z";
 
 const prayerSchema = z.object({
   uuid,
@@ -40,56 +42,128 @@ const entrySchema = z.object({
   deletedAt: maybeTimestamp,
 });
 
+const cursorsSchema = z
+  .object({
+    prayers: z.string().max(200).optional(),
+    thanks: z.string().max(200).optional(),
+    entries: z.string().max(200).optional(),
+  })
+  .partial()
+  .optional();
+
 const pushSchema = z.object({
   since: maybeTimestamp,
-  prayers: z.array(prayerSchema).max(MAX_ROWS).default([]),
-  thanks: z.array(thanksSchema).max(MAX_ROWS).default([]),
-  entries: z.array(entrySchema).max(MAX_ROWS).default([]),
+  cursors: cursorsSchema,
+  pageSize: z.number().int().min(1).max(MAX_PAGE_SIZE).optional(),
+  prayers: z.array(prayerSchema).max(MAX_PAGE_SIZE).default([]),
+  thanks: z.array(thanksSchema).max(MAX_PAGE_SIZE).default([]),
+  entries: z.array(entrySchema).max(MAX_PAGE_SIZE).default([]),
 });
 
-const prayerColumns = `uuid, title, status, created_at AS createdAt, answered_at AS answeredAt,
-  testimony, updated_at AS updatedAt, deleted_at AS deletedAt, synced_at AS syncedAt`;
-const thanksColumns = "uuid, text, day, updated_at AS updatedAt, deleted_at AS deletedAt, synced_at AS syncedAt";
-const entryColumns = `uuid, kind, text, decision, created_at AS createdAt,
-  updated_at AS updatedAt, deleted_at AS deletedAt, synced_at AS syncedAt`;
+const tables = {
+  prayers: {
+    columns: `uuid, title, status, created_at AS createdAt, answered_at AS answeredAt,
+      testimony, updated_at AS updatedAt, deleted_at AS deletedAt, synced_at AS syncedAt`,
+  },
+  thanks: {
+    columns: "uuid, text, day, updated_at AS updatedAt, deleted_at AS deletedAt, synced_at AS syncedAt",
+  },
+  entries: {
+    columns: `uuid, kind, text, decision, created_at AS createdAt,
+      updated_at AS updatedAt, deleted_at AS deletedAt, synced_at AS syncedAt`,
+  },
+} as const;
 
-interface PulledRow {
-  syncedAt?: string;
+type TableName = keyof typeof tables;
+type Cursor = { syncedAt: string; uuid: string };
+
+function encodeCursor(cursor: Cursor): string {
+  return btoa(`${cursor.syncedAt}|${cursor.uuid}`)
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/, "");
 }
 
-async function pull(env: AppEnv["Bindings"], userId: string, since: string) {
-  const [prayers, thanks, entries] = await Promise.all([
-    env.DB.prepare(
-      `SELECT ${prayerColumns} FROM prayers WHERE user_id = ? AND synced_at > ? ORDER BY synced_at LIMIT ${PULL_LIMIT}`,
-    )
-      .bind(userId, since)
-      .all<PulledRow>(),
-    env.DB.prepare(
-      `SELECT ${thanksColumns} FROM thanks WHERE user_id = ? AND synced_at > ? ORDER BY synced_at LIMIT ${PULL_LIMIT}`,
-    )
-      .bind(userId, since)
-      .all<PulledRow>(),
-    env.DB.prepare(
-      `SELECT ${entryColumns} FROM entries WHERE user_id = ? AND synced_at > ? ORDER BY synced_at LIMIT ${PULL_LIMIT}`,
-    )
-      .bind(userId, since)
-      .all<PulledRow>(),
-  ]);
+function decodeCursor(value: string | undefined, fallback: Cursor): Cursor | null {
+  if (!value) return fallback;
+  try {
+    const padded = value.replace(/-/g, "+").replace(/_/g, "/");
+    const raw = atob(padded + "=".repeat((4 - (padded.length % 4)) % 4));
+    const separator = raw.indexOf("|");
+    if (separator < 0) return null;
+    return { syncedAt: raw.slice(0, separator), uuid: raw.slice(separator + 1) };
+  } catch {
+    return null;
+  }
+}
 
-  const lists = [prayers.results ?? [], thanks.results ?? [], entries.results ?? []];
-  let cursor = since;
-  for (const list of lists) {
-    for (const row of list) {
-      const stamp = row.syncedAt;
-      if (stamp && stamp > cursor) cursor = stamp;
-    }
+async function page(
+  env: AppEnv["Bindings"],
+  table: TableName,
+  userId: string,
+  cursor: Cursor,
+  limit: number,
+) {
+  const { columns } = tables[table];
+  const result = await env.DB.prepare(
+    `SELECT ${columns} FROM ${table}
+      WHERE user_id = ? AND (synced_at > ? OR (synced_at = ? AND uuid > ?))
+      ORDER BY synced_at, uuid
+      LIMIT ${limit + 1}`,
+  )
+    .bind(userId, cursor.syncedAt, cursor.syncedAt, cursor.uuid)
+    .all<Record<string, unknown> & { uuid: string }>();
+
+  const rows = result.results ?? [];
+  const hasMore = rows.length > limit;
+  const pageRows = hasMore ? rows.slice(0, limit) : rows;
+  const last = pageRows[pageRows.length - 1];
+  const next = last
+    ? { syncedAt: (last.syncedAt as string) ?? cursor.syncedAt, uuid: last.uuid }
+    : cursor;
+  return { rows: pageRows, next, hasMore };
+}
+
+async function pull(
+  env: AppEnv["Bindings"],
+  userId: string,
+  input: { cursors?: Record<string, string | undefined>; since?: string | null; pageSize?: number },
+) {
+  const limit = input.pageSize ?? DEFAULT_PAGE_SIZE;
+  const incoming: Record<TableName, string | undefined> = {
+    prayers: input.cursors?.prayers,
+    thanks: input.cursors?.thanks,
+    entries: input.cursors?.entries,
+  };
+
+  const decoded: Record<TableName, Cursor> = {
+    prayers: { syncedAt: input.since ?? EPOCH, uuid: "" },
+    thanks: { syncedAt: input.since ?? EPOCH, uuid: "" },
+    entries: { syncedAt: input.since ?? EPOCH, uuid: "" },
+  };
+
+  for (const table of Object.keys(tables) as TableName[]) {
+    const parsed = decodeCursor(incoming[table], decoded[table]);
+    if (!parsed) return null;
+    decoded[table] = parsed;
   }
 
+  const [prayers, thanks, entries] = await Promise.all([
+    page(env, "prayers", userId, decoded.prayers, limit),
+    page(env, "thanks", userId, decoded.thanks, limit),
+    page(env, "entries", userId, decoded.entries, limit),
+  ]);
+
   return {
-    serverTime: cursor,
-    prayers: lists[0],
-    thanks: lists[1],
-    entries: lists[2],
+    prayers: prayers.rows,
+    thanks: thanks.rows,
+    entries: entries.rows,
+    cursors: {
+      prayers: encodeCursor(prayers.next),
+      thanks: encodeCursor(thanks.next),
+      entries: encodeCursor(entries.next),
+    },
+    hasMore: prayers.hasMore || thanks.hasMore || entries.hasMore,
   };
 }
 
@@ -104,7 +178,6 @@ sync.post("/", async (context) => {
   }
 
   const user = context.get("user");
-  const since = parsed.data.since ?? "1970-01-01T00:00:00.000Z";
   const now = new Date().toISOString();
   const statements: D1PreparedStatement[] = [];
 
@@ -186,12 +259,22 @@ sync.post("/", async (context) => {
     await context.env.DB.batch(statements);
   }
 
-  return context.json(await pull(context.env, user.id, since));
+  const changes = await pull(context.env, user.id, {
+    cursors: parsed.data.cursors,
+    since: parsed.data.since,
+    pageSize: parsed.data.pageSize,
+  });
+  if (!changes) return fail(context, 400, "invalid_request", "That cursor is not valid.");
+  return context.json(changes);
 });
 
 sync.get("/", async (context) => {
-  const since = context.req.query("since") ?? "1970-01-01T00:00:00.000Z";
   const user = context.get("user");
-  return context.json(await pull(context.env, user.id, since));
+  const changes = await pull(context.env, user.id, {
+    since: context.req.query("since") ?? EPOCH,
+    pageSize: Number(context.req.query("pageSize") ?? DEFAULT_PAGE_SIZE),
+  });
+  if (!changes) return fail(context, 400, "invalid_request", "That cursor is not valid.");
+  return context.json(changes);
 });
 

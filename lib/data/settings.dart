@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -45,11 +46,21 @@ class Settings extends ChangeNotifier {
   double get volume => _p.getDouble('volume') ?? 0.55;
   Future<void> setVolume(double v) => _set(() => _p.setDouble('volume', v));
 
-  // sync cursor, kept per account so a second account starts from scratch
-  String? lastSyncFor(String email) =>
-      _p.getString('last_sync_${email.trim().toLowerCase()}');
-  Future<void> setLastSyncFor(String email, String value) =>
-      _p.setString('last_sync_${email.trim().toLowerCase()}', value);
+  // sync cursors, one per table and per account so a second account starts clean
+  Map<String, String> syncCursorsFor(String email) {
+    final raw = _p.getString('sync_cursors_${email.trim().toLowerCase()}');
+    if (raw == null) return const <String, String>{};
+    try {
+      return (jsonDecode(raw) as Map).map((key, value) => MapEntry('$key', '$value'));
+    } catch (_) {
+      return const <String, String>{};
+    }
+  }
+
+  Future<void> setSyncCursorsFor(String email, Map<String, String> cursors) => _p.setString(
+        'sync_cursors_${email.trim().toLowerCase()}',
+        jsonEncode(cursors),
+      );
 
   // selah
   bool get selahFocus => _p.getBool('selah_focus') ?? true;

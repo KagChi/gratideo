@@ -356,8 +356,10 @@ class Db {
   }
 
   /// Applies the server copy, keeping whichever version is newer.
-  Future<void> applyRemote(Map<String, dynamic> payload) async {
+  /// Returns true when at least one row was inserted or updated.
+  Future<bool> applyRemote(Map<String, dynamic> payload) async {
     final d = await db;
+    var touched = false;
 
     Future<void> merge(
       String table,
@@ -372,10 +374,12 @@ class Db {
         final values = toValues(row)..['dirty'] = 0;
         if (local.isEmpty) {
           await d.insert(table, values);
+          touched = true;
         } else {
           final localUpdated = (local.first['updated_at'] as String?) ?? '';
           if (remoteUpdated.compareTo(localUpdated) > 0) {
             await d.update(table, values, where: 'uuid = ?', whereArgs: [uuid]);
+            touched = true;
           }
         }
       }
@@ -409,6 +413,8 @@ class Db {
           'updated_at': row['updatedAt'],
           'deleted_at': row['deletedAt'],
         });
+
+    return touched;
   }
 
   /// Signs the device out of sync bookkeeping; the rows stay so nothing is lost.

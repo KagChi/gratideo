@@ -5,8 +5,8 @@ import '../data/settings.dart';
 import 'api_client.dart';
 import 'auth.dart';
 
-/// Pushes local changes to D1 and applies whatever the other phones wrote.
-/// One instance lives for the life of the app; screens ask it to refresh.
+/// Pushes local changes to D1 and walks the server's pages with a cursor, so a
+/// large account never arrives in one response.
 class SyncService extends ChangeNotifier {
   SyncService({required ApiClient api, required AuthService auth, required Settings settings})
       : _api = api,
@@ -14,6 +14,9 @@ class SyncService extends ChangeNotifier {
         _settings = settings;
 
   static SyncService? instance;
+
+  /// Safety stop: a runaway server would otherwise loop forever.
+  static const int maxPages = 25;
 
   final ApiClient _api;
   final AuthService _auth;
@@ -35,20 +38,41 @@ class SyncService extends ChangeNotifier {
     _running = true;
     _error = null;
     notifyListeners();
+
+    var changed = false;
     try {
-      final since = _settings.lastSyncFor(_auth.email) ?? '1970-01-01T00:00:00.000Z';
+      var cursors = Map<String, String>.from(_settings.syncCursorsFor(_auth.email));
       final dirty = await Db.instance.dirtyRows();
-      final body = await _api.post(
-        '/v1/sync',
-        body: {'since': since, ...dirty},
-        token: token,
-      );
-      await Db.instance.markPushed(dirty);
-      await Db.instance.applyRemote(body);
-      final serverTime = body['serverTime'] as String?;
-      if (serverTime != null) await _settings.setLastSyncFor(_auth.email, serverTime);
+      var firstPage = true;
+
+      for (var page = 0; page < maxPages; page++) {
+        final body = await _api.post(
+          '/v1/sync',
+          body: {
+            'cursors': cursors,
+            if (firstPage) ...dirty,
+          },
+          token: token,
+        );
+
+        if (firstPage) {
+          await Db.instance.markPushed(dirty);
+          firstPage = false;
+        }
+
+        changed = await Db.instance.applyRemote(body) || changed;
+
+        final next = (body['cursors'] as Map?)?.map((key, value) => MapEntry('$key', '$value'));
+        if (next != null) {
+          cursors = Map<String, String>.from(next);
+          await _settings.setSyncCursorsFor(_auth.email, cursors);
+        }
+
+        if (body['hasMore'] != true) break;
+      }
+
       _lastRun = DateTime.now();
-      return true;
+      return changed;
     } on ApiException catch (error) {
       _error = error.message;
       return false;
