@@ -31,8 +31,11 @@ The app points at `https://gratideo-api.im-maxyacademy.workers.dev` by default. 
 another deployment, build with `--dart-define=API_BASE_URL=https://your-worker.workers.dev`,
 or set the `API_BASE_URL` repository variable so CI picks it up.
 
-Prayers, thanks and journal entries stay in the on-device database for now; they are
-not synced between phones.
+Prayers, thanks and journal entries are stored in SQLite on the phone and synced to
+D1 through `POST /v1/sync`, so the same account sees them on every device. Writes are
+local first (the phone keeps working offline); each pass pushes the rows it changed and
+pulls anything newer, with the last write winning. List screens show a pulsing skeleton
+while the first load lands.
 
 ## Build it (about 20 minutes the first time)
 

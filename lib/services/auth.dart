@@ -19,6 +19,9 @@ abstract class AuthService extends ChangeNotifier {
   bool get isSignedIn;
   String get email;
 
+  /// Session token for the API, or null when signed out.
+  String? get token;
+
   Future<void> signIn({required String email, required String password});
   Future<void> register({
     required String name,
@@ -65,6 +68,9 @@ class ApiAuthService extends AuthService {
 
   @override
   String get email => _email;
+
+  @override
+  String? get token => _token;
 
   Future<void> _restore() async {
     try {

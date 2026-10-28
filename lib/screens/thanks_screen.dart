@@ -4,7 +4,9 @@ import 'package:flutter_animate/flutter_animate.dart';
 import '../data/db.dart';
 import '../data/models.dart';
 import '../theme/gratideo_theme.dart';
+import '../services/sync.dart';
 import '../widgets/common.dart';
+import '../widgets/skeleton.dart';
 
 /// Three things to thank God for today. Each line glows in turn when given.
 class ThanksScreen extends StatefulWidget {
@@ -22,7 +24,13 @@ class _ThanksScreenState extends State<ThanksScreen> {
   @override
   void initState() {
     super.initState();
-    _load();
+    _bootstrap();
+  }
+
+  Future<void> _bootstrap() async {
+    await _load();
+    final changed = await (SyncService.instance?.sync() ?? Future.value(false));
+    if (changed) await _load();
   }
 
   Future<void> _load() async {
@@ -61,6 +69,9 @@ class _ThanksScreenState extends State<ThanksScreen> {
   @override
   Widget build(BuildContext context) {
     final g = context.g;
+    if (!_loaded) {
+      return const ScreenSkeleton(title: 'Give thanks', subtitle: 'Small things count. He sees them all.');
+    }
     const hints = ['Something small', 'Someone He sent', 'Something He did'];
     final filled = _c.where((c) => c.text.trim().isNotEmpty).length;
     return SafeArea(

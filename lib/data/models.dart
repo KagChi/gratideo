@@ -4,49 +4,76 @@ enum PrayerStatus { praying, answered, waiting, surrendered }
 PrayerStatus statusFrom(String s) => PrayerStatus.values.firstWhere((e) => e.name == s, orElse: () => PrayerStatus.praying);
 
 class Prayer {
-  Prayer({required this.id, required this.title, required this.status, required this.createdAt, this.answeredAt, this.testimony});
+  Prayer({required this.id, required this.uuid, required this.title, required this.status, required this.createdAt, this.answeredAt, this.testimony, DateTime? updatedAt, this.deletedAt})
+      : updatedAt = updatedAt ?? createdAt;
   final int id;
+  final String uuid;
   final String title;
   final PrayerStatus status;
   final DateTime createdAt;
   final DateTime? answeredAt;
   final String? testimony;
+  final DateTime updatedAt;
+  final DateTime? deletedAt;
 
   int get daysPraying => (answeredAt ?? DateTime.now()).difference(createdAt).inDays + 1;
 
   factory Prayer.fromMap(Map<String, Object?> m) => Prayer(
         id: m['id'] as int,
+        uuid: (m['uuid'] as String?) ?? 'local-${m['id']}',
         title: m['title'] as String,
         status: statusFrom(m['status'] as String),
         createdAt: DateTime.parse(m['created_at'] as String),
         answeredAt: m['answered_at'] == null ? null : DateTime.parse(m['answered_at'] as String),
         testimony: m['testimony'] as String?,
+        updatedAt: m['updated_at'] == null ? null : DateTime.tryParse(m['updated_at'] as String),
+        deletedAt: m['deleted_at'] == null ? null : DateTime.tryParse(m['deleted_at'] as String),
       );
 }
 
 class Thanks {
-  Thanks({required this.id, required this.text, required this.day});
+  Thanks({required this.id, required this.uuid, required this.text, required this.day, DateTime? updatedAt, this.deletedAt})
+      : updatedAt = updatedAt ?? DateTime.now();
   final int id;
+  final String uuid;
   final String text;
   final String day; // yyyy-MM-dd
-  factory Thanks.fromMap(Map<String, Object?> m) => Thanks(id: m['id'] as int, text: m['text'] as String, day: m['day'] as String);
+  final DateTime updatedAt;
+  final DateTime? deletedAt;
+
+  factory Thanks.fromMap(Map<String, Object?> m) => Thanks(
+        id: m['id'] as int,
+        uuid: (m['uuid'] as String?) ?? 'local-${m['id']}',
+        text: m['text'] as String,
+        day: m['day'] as String,
+        updatedAt: m['updated_at'] == null ? null : DateTime.tryParse(m['updated_at'] as String),
+        deletedAt: m['deleted_at'] == null ? null : DateTime.tryParse(m['deleted_at'] as String),
+      );
 }
 
 enum EntryKind { journal, selah }
 
 class Entry {
-  Entry({required this.id, required this.kind, required this.text, required this.createdAt, this.decision});
+  Entry({required this.id, required this.uuid, required this.kind, required this.text, required this.createdAt, this.decision, DateTime? updatedAt, this.deletedAt})
+      : updatedAt = updatedAt ?? createdAt;
   final int id;
+  final String uuid;
   final EntryKind kind;
   final String text;
   final DateTime createdAt;
   final String? decision; // for Selah: what was brought to God
+  final DateTime updatedAt;
+  final DateTime? deletedAt;
+
   factory Entry.fromMap(Map<String, Object?> m) => Entry(
         id: m['id'] as int,
+        uuid: (m['uuid'] as String?) ?? 'local-${m['id']}',
         kind: (m['kind'] as String) == 'selah' ? EntryKind.selah : EntryKind.journal,
         text: m['text'] as String,
         createdAt: DateTime.parse(m['created_at'] as String),
         decision: m['decision'] as String?,
+        updatedAt: m['updated_at'] == null ? null : DateTime.tryParse(m['updated_at'] as String),
+        deletedAt: m['deleted_at'] == null ? null : DateTime.tryParse(m['deleted_at'] as String),
       );
 }
 

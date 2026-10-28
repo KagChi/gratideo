@@ -4,7 +4,9 @@ import 'package:intl/intl.dart';
 import '../data/db.dart';
 import '../data/models.dart';
 import '../theme/gratideo_theme.dart';
+import '../services/sync.dart';
 import '../widgets/common.dart';
+import '../widgets/skeleton.dart';
 import '../widgets/stones.dart';
 import 'journal_screen.dart';
 
@@ -23,11 +25,18 @@ class _RememberScreenState extends State<RememberScreen> {
   int _thanksTotal = 0;
   bool _reminding = false;
   List<Thanks> _randomThanks = [];
+  bool _loading = true;
 
   @override
   void initState() {
     super.initState();
-    _load();
+    _bootstrap();
+  }
+
+  Future<void> _bootstrap() async {
+    await _load();
+    final changed = await (SyncService.instance?.sync() ?? Future.value(false));
+    if (changed) await _load();
   }
 
   Future<void> _load() async {
@@ -40,14 +49,14 @@ class _RememberScreenState extends State<RememberScreen> {
       _twelve = twelve;
       _answered = answered;
       _thanksTotal = total;
+      _loading = false;
     });
   }
 
   Future<void> _remindMe() async {
-    final d = await Db.instance.db;
-    final rows = await d.query('thanks', orderBy: 'RANDOM()', limit: 5);
+    final rows = await Db.instance.randomThanks(5);
     setState(() {
-      _randomThanks = rows.map(Thanks.fromMap).toList();
+      _randomThanks = rows;
       _reminding = true;
     });
   }
@@ -55,6 +64,9 @@ class _RememberScreenState extends State<RememberScreen> {
   @override
   Widget build(BuildContext context) {
     final g = context.g;
+    if (_loading) {
+      return const ScreenSkeleton(title: 'Remember', subtitle: 'He has never left you. Here is the proof.');
+    }
     final empty = _answered.isEmpty && _thanksTotal == 0;
     return SafeArea(
       bottom: false,

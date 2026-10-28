@@ -45,6 +45,12 @@ class Settings extends ChangeNotifier {
   double get volume => _p.getDouble('volume') ?? 0.55;
   Future<void> setVolume(double v) => _set(() => _p.setDouble('volume', v));
 
+  // sync cursor, kept per account so a second account starts from scratch
+  String? lastSyncFor(String email) =>
+      _p.getString('last_sync_${email.trim().toLowerCase()}');
+  Future<void> setLastSyncFor(String email, String value) =>
+      _p.setString('last_sync_${email.trim().toLowerCase()}', value);
+
   // selah
   bool get selahFocus => _p.getBool('selah_focus') ?? true;
   Future<void> setSelahFocus(bool v) => _set(() => _p.setBool('selah_focus', v));

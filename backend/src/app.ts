@@ -1,5 +1,4 @@
 import { Hono } from "hono";
-import type { Context } from "hono";
 import { z } from "zod";
 
 import {
@@ -9,14 +8,10 @@ import {
   randomToken,
   sha256Hex,
 } from "./crypto";
-
-export interface Env {
-  DB: D1Database;
-  PEPPER: string;
-  AUTH_RATE_LIMITER?: {
-    limit(options: { key: string }): Promise<{ success: boolean }>;
-  };
-}
+import { requireUser } from "./session";
+import { sync } from "./sync";
+import type { AppEnv, Env } from "./types";
+import { fail, readJson } from "./types";
 
 interface UserRow {
   id: string;
@@ -26,17 +21,6 @@ interface UserRow {
   kdf_iterations: number;
   created_at: string;
 }
-
-interface Account {
-  id: string;
-  email: string;
-  name: string;
-  createdAt: string;
-}
-
-type Variables = { user: Account; tokenHash: string };
-type Status = 400 | 401 | 404 | 409 | 429 | 500;
-type AppEnv = { Bindings: Env; Variables: Variables };
 
 const SESSION_DAYS = 30;
 const MIN_ITERATIONS = 100_000;
@@ -64,18 +48,6 @@ const registerSchema = z.object({
 
 const loginSchema = z.object({ email: emailSchema, verifier: verifierSchema });
 
-function fail(context: Context<AppEnv>, status: Status, code: string, message: string) {
-  return context.json({ error: { code, message } }, status);
-}
-
-async function readJson(context: Context<AppEnv>): Promise<unknown> {
-  try {
-    return await context.req.json();
-  } catch {
-    return null;
-  }
-}
-
 async function createSession(env: Env, userId: string, now = new Date()) {
   const token = randomToken();
   const tokenHash = await sha256Hex(token);
@@ -88,11 +60,7 @@ async function createSession(env: Env, userId: string, now = new Date()) {
   return { token, expiresAt };
 }
 
-function toAccount(row: UserRow): Account {
-  return { id: row.id, email: row.email, name: row.name, createdAt: row.created_at };
-}
-
-export const app = new Hono<AppEnv>();
+const app = new Hono<AppEnv>();
 
 app.use("/v1/auth/*", async (context, next) => {
   const limiter = context.env.AUTH_RATE_LIMITER;
@@ -105,31 +73,6 @@ app.use("/v1/auth/*", async (context, next) => {
   }
   await next();
 });
-
-const requireUser = async (context: Context<AppEnv>, next: () => Promise<void>) => {
-  const header = context.req.header("Authorization") ?? "";
-  const token = header.startsWith("Bearer ") ? header.slice(7).trim() : "";
-  if (!token) return fail(context, 401, "unauthorized", "Sign in to continue.");
-
-  const tokenHash = await sha256Hex(token);
-  const row = await context.env.DB.prepare(
-    `SELECT u.id, u.email, u.name, u.verifier_hmac, u.kdf_iterations, u.created_at, s.expires_at
-       FROM sessions s JOIN users u ON u.id = s.user_id
-      WHERE s.token_hash = ?`,
-  )
-    .bind(tokenHash)
-    .first<UserRow & { expires_at: string }>();
-
-  if (!row) return fail(context, 401, "unauthorized", "Sign in to continue.");
-  if (row.expires_at <= new Date().toISOString()) {
-    await context.env.DB.prepare("DELETE FROM sessions WHERE token_hash = ?").bind(tokenHash).run();
-    return fail(context, 401, "unauthorized", "Your session expired. Sign in again.");
-  }
-
-  context.set("user", toAccount(row));
-  context.set("tokenHash", tokenHash);
-  await next();
-};
 
 app.get("/health", (context) => context.json({ ok: true }));
 
@@ -170,7 +113,11 @@ app.post("/v1/auth/register", async (context) => {
 
   const session = await createSession(context.env, user.id, now);
   return context.json(
-    { token: session.token, expiresAt: session.expiresAt, user: toAccount(user) },
+    {
+      token: session.token,
+      expiresAt: session.expiresAt,
+      user: { id: user.id, email: user.email, name: user.name, createdAt: user.created_at },
+    },
     201,
   );
 });
@@ -204,7 +151,7 @@ app.post("/v1/auth/login", async (context) => {
   return context.json({
     token: session.token,
     expiresAt: session.expiresAt,
-    user: toAccount(user),
+    user: { id: user.id, email: user.email, name: user.name, createdAt: user.created_at },
   });
 });
 
@@ -226,6 +173,8 @@ app.post("/v1/auth/password/reset-request", async (context) => {
   return context.json({ status: "accepted" }, 202);
 });
 
+app.route("/v1/sync", sync);
+
 app.notFound((context) => fail(context, 404, "not_found", "Unknown endpoint."));
 
 app.onError((error, context) => {
@@ -234,3 +183,5 @@ app.onError((error, context) => {
 });
 
 export default app;
+export { app };
+

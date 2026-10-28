@@ -5,7 +5,9 @@ import 'package:intl/intl.dart';
 import '../data/db.dart';
 import '../data/models.dart';
 import '../theme/gratideo_theme.dart';
+import '../services/sync.dart';
 import '../widgets/common.dart';
+import '../widgets/skeleton.dart';
 import '../widgets/scope.dart';
 import '../widgets/stones.dart';
 
@@ -20,11 +22,18 @@ class _PrayersScreenState extends State<PrayersScreen> {
   List<Prayer> _active = [];
   List<Prayer> _answered = [];
   int _justAnswered = 0;
+  bool _loading = true;
 
   @override
   void initState() {
     super.initState();
-    _reload();
+    _bootstrap();
+  }
+
+  Future<void> _bootstrap() async {
+    await _reload();
+    final changed = await (SyncService.instance?.sync() ?? Future.value(false));
+    if (changed) await _reload();
   }
 
   Future<void> _reload() async {
@@ -33,6 +42,7 @@ class _PrayersScreenState extends State<PrayersScreen> {
     if (mounted) setState(() {
       _active = a;
       _answered = d;
+      _loading = false;
     });
   }
 
@@ -67,6 +77,9 @@ class _PrayersScreenState extends State<PrayersScreen> {
   Widget build(BuildContext context) {
     final g = context.g;
     final slots = SettingsScope.of(context).prayerSlots;
+    if (_loading) {
+      return const ScreenSkeleton(title: 'Prayers', subtitle: 'Praying until He answers.');
+    }
     return SafeArea(
       bottom: false,
       child: ListView(

@@ -4,7 +4,9 @@ import 'package:intl/intl.dart';
 import '../data/db.dart';
 import '../data/models.dart';
 import '../theme/gratideo_theme.dart';
+import '../services/sync.dart';
 import '../widgets/common.dart';
+import '../widgets/skeleton.dart';
 
 /// Free-form entries plus every Selah note, newest first, searchable.
 class JournalScreen extends StatefulWidget {
@@ -15,18 +17,28 @@ class JournalScreen extends StatefulWidget {
 
 class _JournalScreenState extends State<JournalScreen> {
   List<Entry> _all = [];
+  bool _loading = true;
   String _q = '';
   final _draft = TextEditingController();
 
   @override
   void initState() {
     super.initState();
-    _reload();
+    _bootstrap();
+  }
+
+  Future<void> _bootstrap() async {
+    await _reload();
+    final changed = await (SyncService.instance?.sync() ?? Future.value(false));
+    if (changed) await _reload();
   }
 
   Future<void> _reload() async {
     final e = await Db.instance.entries();
-    if (mounted) setState(() => _all = e);
+    if (mounted) setState(() {
+      _all = e;
+      _loading = false;
+    });
   }
 
   Future<void> _save() async {
@@ -47,6 +59,9 @@ class _JournalScreenState extends State<JournalScreen> {
   @override
   Widget build(BuildContext context) {
     final g = context.g;
+    if (_loading) {
+      return const ScreenSkeleton(title: 'Journal', subtitle: 'What He is doing, in your own words.');
+    }
     final q = _q.trim().toLowerCase();
     final items = q.isEmpty ? _all : _all.where((e) => e.text.toLowerCase().contains(q) || (e.decision ?? '').toLowerCase().contains(q)).toList();
     return SafeArea(

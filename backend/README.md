@@ -16,9 +16,15 @@ Live deployment: <https://gratideo-api.im-maxyacademy.workers.dev>
 | GET | `/v1/auth/me` | Bearer token | `{user}` |
 | POST | `/v1/auth/logout` | Bearer token | 204 |
 | POST | `/v1/auth/password/reset-request` | `{email}` | 202 (no mail is sent yet) |
+| POST | `/v1/sync` | `{since, prayers[], thanks[], entries[]}` | `{serverTime, prayers, thanks, entries}` |
+| GET | `/v1/sync?since=` | Bearer token | `{serverTime, prayers, thanks, entries}` |
 
 Errors are `{ error: { code, message } }`. Sessions are opaque 32-byte tokens,
 stored as SHA-256 hashes, and expire after 30 days.
+
+Sync rows are keyed by uuid and merged last-write-wins on `updatedAt`; deletions travel
+as tombstones (`deletedAt`) so removing something on one phone removes it everywhere.
+Each account only ever sees its own rows.
 
 ## Local work
 
