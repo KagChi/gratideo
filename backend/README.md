@@ -26,6 +26,10 @@ Sync rows are keyed by uuid and merged last-write-wins on `updatedAt`; deletions
 as tombstones (`deletedAt`) so removing something on one phone removes it everywhere.
 Each account only ever sees its own rows.
 
+The pull cursor is `synced_at`, stamped by the Worker when a row is accepted, so a phone
+with a wrong clock still receives everything. `serverTime` in the response is that
+cursor: send it back as `since` next time.
+
 ## Local work
 
 ```sh

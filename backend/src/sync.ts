@@ -9,6 +9,7 @@ const timestamp = z.string().min(10).max(40);
 const maybeTimestamp = timestamp.nullable().optional();
 const uuid = z.string().min(8).max(64);
 const MAX_ROWS = 200;
+const PULL_LIMIT = 2000;
 
 const prayerSchema = z.object({
   uuid,
@@ -46,36 +47,49 @@ const pushSchema = z.object({
   entries: z.array(entrySchema).max(MAX_ROWS).default([]),
 });
 
-const PULL_LIMIT = 2000;
-
 const prayerColumns = `uuid, title, status, created_at AS createdAt, answered_at AS answeredAt,
-  testimony, updated_at AS updatedAt, deleted_at AS deletedAt`;
-const thanksColumns = "uuid, text, day, updated_at AS updatedAt, deleted_at AS deletedAt";
+  testimony, updated_at AS updatedAt, deleted_at AS deletedAt, synced_at AS syncedAt`;
+const thanksColumns = "uuid, text, day, updated_at AS updatedAt, deleted_at AS deletedAt, synced_at AS syncedAt";
 const entryColumns = `uuid, kind, text, decision, created_at AS createdAt,
-  updated_at AS updatedAt, deleted_at AS deletedAt`;
+  updated_at AS updatedAt, deleted_at AS deletedAt, synced_at AS syncedAt`;
+
+interface PulledRow {
+  syncedAt?: string;
+}
 
 async function pull(env: AppEnv["Bindings"], userId: string, since: string) {
   const [prayers, thanks, entries] = await Promise.all([
     env.DB.prepare(
-      `SELECT ${prayerColumns} FROM prayers WHERE user_id = ? AND updated_at > ? ORDER BY updated_at LIMIT ${PULL_LIMIT}`,
+      `SELECT ${prayerColumns} FROM prayers WHERE user_id = ? AND synced_at > ? ORDER BY synced_at LIMIT ${PULL_LIMIT}`,
     )
       .bind(userId, since)
-      .all(),
+      .all<PulledRow>(),
     env.DB.prepare(
-      `SELECT ${thanksColumns} FROM thanks WHERE user_id = ? AND updated_at > ? ORDER BY updated_at LIMIT ${PULL_LIMIT}`,
+      `SELECT ${thanksColumns} FROM thanks WHERE user_id = ? AND synced_at > ? ORDER BY synced_at LIMIT ${PULL_LIMIT}`,
     )
       .bind(userId, since)
-      .all(),
+      .all<PulledRow>(),
     env.DB.prepare(
-      `SELECT ${entryColumns} FROM entries WHERE user_id = ? AND updated_at > ? ORDER BY updated_at LIMIT ${PULL_LIMIT}`,
+      `SELECT ${entryColumns} FROM entries WHERE user_id = ? AND synced_at > ? ORDER BY synced_at LIMIT ${PULL_LIMIT}`,
     )
       .bind(userId, since)
-      .all(),
+      .all<PulledRow>(),
   ]);
+
+  const lists = [prayers.results ?? [], thanks.results ?? [], entries.results ?? []];
+  let cursor = since;
+  for (const list of lists) {
+    for (const row of list) {
+      const stamp = row.syncedAt;
+      if (stamp && stamp > cursor) cursor = stamp;
+    }
+  }
+
   return {
-    prayers: prayers.results ?? [],
-    thanks: thanks.results ?? [],
-    entries: entries.results ?? [],
+    serverTime: cursor,
+    prayers: lists[0],
+    thanks: lists[1],
+    entries: lists[2],
   };
 }
 
@@ -91,13 +105,14 @@ sync.post("/", async (context) => {
 
   const user = context.get("user");
   const since = parsed.data.since ?? "1970-01-01T00:00:00.000Z";
+  const now = new Date().toISOString();
   const statements: D1PreparedStatement[] = [];
 
   for (const row of parsed.data.prayers) {
     statements.push(
       context.env.DB.prepare(
-        `INSERT INTO prayers (uuid, user_id, title, status, created_at, answered_at, testimony, updated_at, deleted_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        `INSERT INTO prayers (uuid, user_id, title, status, created_at, answered_at, testimony, updated_at, deleted_at, synced_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
          ON CONFLICT(uuid) DO UPDATE SET
            title = excluded.title,
            status = excluded.status,
@@ -105,7 +120,8 @@ sync.post("/", async (context) => {
            answered_at = excluded.answered_at,
            testimony = excluded.testimony,
            updated_at = excluded.updated_at,
-           deleted_at = excluded.deleted_at
+           deleted_at = excluded.deleted_at,
+           synced_at = excluded.synced_at
          WHERE excluded.updated_at > prayers.updated_at AND prayers.user_id = excluded.user_id`,
       ).bind(
         row.uuid,
@@ -117,6 +133,7 @@ sync.post("/", async (context) => {
         row.testimony ?? null,
         row.updatedAt,
         row.deletedAt ?? null,
+        now,
       ),
     );
   }
@@ -124,30 +141,32 @@ sync.post("/", async (context) => {
   for (const row of parsed.data.thanks) {
     statements.push(
       context.env.DB.prepare(
-        `INSERT INTO thanks (uuid, user_id, text, day, updated_at, deleted_at)
-         VALUES (?, ?, ?, ?, ?, ?)
+        `INSERT INTO thanks (uuid, user_id, text, day, updated_at, deleted_at, synced_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?)
          ON CONFLICT(uuid) DO UPDATE SET
            text = excluded.text,
            day = excluded.day,
            updated_at = excluded.updated_at,
-           deleted_at = excluded.deleted_at
+           deleted_at = excluded.deleted_at,
+           synced_at = excluded.synced_at
          WHERE excluded.updated_at > thanks.updated_at AND thanks.user_id = excluded.user_id`,
-      ).bind(row.uuid, user.id, row.text, row.day, row.updatedAt, row.deletedAt ?? null),
+      ).bind(row.uuid, user.id, row.text, row.day, row.updatedAt, row.deletedAt ?? null, now),
     );
   }
 
   for (const row of parsed.data.entries) {
     statements.push(
       context.env.DB.prepare(
-        `INSERT INTO entries (uuid, user_id, kind, text, decision, created_at, updated_at, deleted_at)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        `INSERT INTO entries (uuid, user_id, kind, text, decision, created_at, updated_at, deleted_at, synced_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
          ON CONFLICT(uuid) DO UPDATE SET
            kind = excluded.kind,
            text = excluded.text,
            decision = excluded.decision,
            created_at = excluded.created_at,
            updated_at = excluded.updated_at,
-           deleted_at = excluded.deleted_at
+           deleted_at = excluded.deleted_at,
+           synced_at = excluded.synced_at
          WHERE excluded.updated_at > entries.updated_at AND entries.user_id = excluded.user_id`,
       ).bind(
         row.uuid,
@@ -158,6 +177,7 @@ sync.post("/", async (context) => {
         row.createdAt,
         row.updatedAt,
         row.deletedAt ?? null,
+        now,
       ),
     );
   }
@@ -166,14 +186,12 @@ sync.post("/", async (context) => {
     await context.env.DB.batch(statements);
   }
 
-  const changes = await pull(context.env, user.id, since);
-  return context.json({ serverTime: new Date().toISOString(), ...changes });
+  return context.json(await pull(context.env, user.id, since));
 });
 
 sync.get("/", async (context) => {
   const since = context.req.query("since") ?? "1970-01-01T00:00:00.000Z";
   const user = context.get("user");
-  const changes = await pull(context.env, user.id, since);
-  return context.json({ serverTime: new Date().toISOString(), ...changes });
+  return context.json(await pull(context.env, user.id, since));
 });
 
