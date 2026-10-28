@@ -59,9 +59,13 @@ jobs:
         run: flutter test
 
       - name: Build release APK and App Bundle
+        env:
+          API_BASE_URL: ${{ vars.API_BASE_URL }}
         run: |
-          flutter build apk --release --build-number=${{ github.run_number }}
-          flutter build appbundle --release --build-number=${{ github.run_number }}
+          define=""
+          if [ -n "$API_BASE_URL" ]; then define="--dart-define=API_BASE_URL=$API_BASE_URL"; fi
+          flutter build apk --release --build-number=${{ github.run_number }} $define
+          flutter build appbundle --release --build-number=${{ github.run_number }} $define
 
       - name: Verify build output
         run: |

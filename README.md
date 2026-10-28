@@ -21,6 +21,19 @@ The CI build signs with Flutter's debug key, which is fine for testers but not f
 the Play Store. For a properly signed release, add `android/key.properties` and your
 keystore as repository secrets and wire them into the workflow.
 
+## Accounts
+
+Sign in and register talk to a Cloudflare Worker with a D1 database, deployed from
+`backend/` (see [backend/README.md](backend/README.md)). The password never leaves the
+phone: the app derives a PBKDF2-SHA256 verifier and sends only that.
+
+The app points at `https://gratideo-api.im-maxyacademy.workers.dev` by default. To use
+another deployment, build with `--dart-define=API_BASE_URL=https://your-worker.workers.dev`,
+or set the `API_BASE_URL` repository variable so CI picks it up.
+
+Prayers, thanks and journal entries stay in the on-device database for now; they are
+not synced between phones.
+
 ## Build it (about 20 minutes the first time)
 
 1. Install Flutter (stable) and Android Studio with an Android SDK. `flutter doctor` should show Android ticked.

@@ -1,0 +1,23 @@
+{
+  // Deployed by CI with the real database id patched in from vars.D1_DATABASE_ID.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gratideo-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gratideo-db",
+      "database_id": "a1c782ae-78cd-4b5b-9dea-92554bef461f",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "AUTH_RATE_LIMITER",
+      "namespace_id": "1001",
+      "simple": { "limit": 10, "period": 60 }
+    }
+  ]
+}

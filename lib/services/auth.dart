@@ -1,18 +1,20 @@
 import 'dart:convert';
-import 'dart:math';
 
-import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
-import '../data/settings.dart';
+import 'api_client.dart';
+import 'credentials.dart';
+import 'token_store.dart';
 
 class AuthException implements Exception {
   const AuthException(this.message);
+
   final String message;
+
+  @override
+  String toString() => message;
 }
 
-/// Replace this service with a backend implementation when it is ready.
 abstract class AuthService extends ChangeNotifier {
   bool get isSignedIn;
   String get email;
@@ -25,48 +27,109 @@ abstract class AuthService extends ChangeNotifier {
   });
   Future<void> requestPasswordReset(String email);
   Future<void> signOut();
+
+  /// Re-reads the account from the server; safe to call when offline.
+  Future<void> refresh();
 }
 
-/// One local account per device. The password is never stored. Existing app
-/// content is device-wide and is not separated by account.
-class LocalAuthService extends AuthService {
-  LocalAuthService._(this._prefs, this._settings);
+/// Talks to the Gratideo Worker. The password is stretched on this device with
+/// PBKDF2-SHA256 and only the verifier is sent over the wire.
+class ApiAuthService extends AuthService {
+  ApiAuthService._(this._api, this._store, this._iterations);
 
-  final SharedPreferences _prefs;
-  final Settings _settings;
+  static Future<ApiAuthService> load({
+    ApiClient? api,
+    TokenStore? store,
+    int iterations = kdfIterations,
+  }) async {
+    final service = ApiAuthService._(
+      api ?? ApiClient(),
+      store ?? SecureTokenStore(),
+      iterations,
+    );
+    await service._restore();
+    return service;
+  }
 
-  static Future<LocalAuthService> load(Settings settings) async =>
-      LocalAuthService._(await SharedPreferences.getInstance(), settings);
+  final ApiClient _api;
+  final TokenStore _store;
+  final int _iterations;
+
+  String? _token;
+  String _email = '';
+  DateTime? _expiresAt;
+  bool _signedIn = false;
 
   @override
-  bool get isSignedIn => _prefs.getBool('auth_signed_in') ?? false;
+  bool get isSignedIn => _signedIn;
 
   @override
-  String get email => _prefs.getString('auth_email') ?? '';
+  String get email => _email;
 
-  static const _iterations = 120000;
-
-  static List<int> _derive(String password, List<int> salt) {
-    final hmac = Hmac(sha256, utf8.encode(password));
-    var u = hmac.convert([...salt, 0, 0, 0, 1]).bytes;
-    final result = List<int>.from(u);
-    for (var i = 1; i < _iterations; i++) {
-      u = hmac.convert(u).bytes;
-      for (var j = 0; j < result.length; j++) {
-        result[j] ^= u[j];
+  Future<void> _restore() async {
+    try {
+      final raw = await _store.read();
+      if (raw == null || raw.isEmpty) return;
+      final session = jsonDecode(raw) as Map<String, dynamic>;
+      final token = session['token'] as String?;
+      final expiresAt = DateTime.tryParse((session['expiresAt'] as String?) ?? '');
+      if (token == null || expiresAt == null || expiresAt.isBefore(DateTime.now())) {
+        await _store.delete();
+        return;
       }
+      _token = token;
+      _email = (session['email'] as String?) ?? '';
+      _expiresAt = expiresAt;
+      _signedIn = true;
+    } catch (_) {
+      await _store.delete();
     }
-    return result;
   }
 
-  static bool _sameBytes(List<int> a, List<int> b) {
-    if (a.length != b.length) return false;
-    var difference = 0;
-    for (var i = 0; i < a.length; i++) {
-      difference |= a[i] ^ b[i];
-    }
-    return difference == 0;
+  Future<void> _persist() async {
+    final token = _token;
+    final expiresAt = _expiresAt;
+    if (token == null || expiresAt == null) return;
+    await _store.write(jsonEncode({
+      'token': token,
+      'email': _email,
+      'expiresAt': expiresAt.toIso8601String(),
+    }));
   }
+
+  Future<void> _adopt(Map<String, dynamic> body) async {
+    final user = (body['user'] as Map).cast<String, dynamic>();
+    _token = body['token'] as String;
+    _email = (user['email'] as String?) ?? '';
+    _expiresAt = DateTime.tryParse((body['expiresAt'] as String?) ?? '') ??
+        DateTime.now().add(const Duration(days: 30));
+    _signedIn = true;
+    await _persist();
+    notifyListeners();
+  }
+
+  Future<void> _clear() async {
+    _token = null;
+    _email = '';
+    _expiresAt = null;
+    _signedIn = false;
+    await _store.delete();
+    notifyListeners();
+  }
+
+  Future<Map<String, dynamic>> _guard(Future<Map<String, dynamic>> Function() action) async {
+    try {
+      return await action();
+    } on ApiException catch (error) {
+      throw AuthException(error.message);
+    }
+  }
+
+  Future<String> _verifier(String email, String password) => deriveVerifierInBackground(
+        email,
+        password,
+        iterations: _iterations,
+      );
 
   @override
   Future<void> register({
@@ -74,54 +137,63 @@ class LocalAuthService extends AuthService {
     required String email,
     required String password,
   }) async {
-    if (_prefs.containsKey('auth_verifier')) {
-      throw const AuthException(
-        'An account already exists on this device. Sign in to continue.',
-      );
-    }
-    final random = Random.secure();
-    final salt = List<int>.generate(16, (_) => random.nextInt(256));
-    final verifier = await compute(_derivePassword, (password, salt));
-    await _prefs.setString('auth_salt', base64Encode(salt));
-    await _prefs.setString('auth_verifier', base64Encode(verifier));
-    await _prefs.setString('auth_email', email.trim().toLowerCase());
-    await _settings.setName(name);
-    await _prefs.setBool('auth_signed_in', true);
-    notifyListeners();
+    final address = normalizeEmail(email);
+    final verifier = await _verifier(address, password);
+    final body = await _guard(() => _api.post('/v1/auth/register', body: {
+          'name': name.trim(),
+          'email': address,
+          'verifier': verifier,
+          'kdf': {'algo': kdfAlgorithm, 'iterations': _iterations},
+        }));
+    await _adopt(body);
   }
 
   @override
   Future<void> signIn({required String email, required String password}) async {
-    final savedSalt = _prefs.getString('auth_salt');
-    final savedVerifier = _prefs.getString('auth_verifier');
-    if (this.email.isEmpty ||
-        savedSalt == null ||
-        savedVerifier == null ||
-        this.email != email.trim().toLowerCase()) {
-      throw const AuthException('Email or password is incorrect.');
-    }
-    final verifier = await compute(_derivePassword, (
-      password,
-      base64Decode(savedSalt),
-    ));
-    if (!_sameBytes(verifier, base64Decode(savedVerifier))) {
-      throw const AuthException('Email or password is incorrect.');
-    }
-    await _prefs.setBool('auth_signed_in', true);
-    notifyListeners();
+    final address = normalizeEmail(email);
+    final verifier = await _verifier(address, password);
+    final body = await _guard(() => _api.post('/v1/auth/login', body: {
+          'email': address,
+          'verifier': verifier,
+        }));
+    await _adopt(body);
   }
 
   @override
   Future<void> requestPasswordReset(String email) async {
-    throw const AuthException('Password reset email is not available yet.');
+    await _guard(() => _api.post('/v1/auth/password/reset-request', body: {
+          'email': normalizeEmail(email),
+        }));
   }
 
   @override
   Future<void> signOut() async {
-    await _prefs.setBool('auth_signed_in', false);
-    notifyListeners();
+    final token = _token;
+    await _clear();
+    if (token == null) return;
+    try {
+      await _api.post('/v1/auth/logout', token: token);
+    } catch (_) {
+      // Best effort: the local session is already gone.
+    }
+  }
+
+  @override
+  Future<void> refresh() async {
+    final token = _token;
+    if (token == null) return;
+    try {
+      final body = await _api.get('/v1/auth/me', token: token);
+      final user = (body['user'] as Map).cast<String, dynamic>();
+      final email = (user['email'] as String?) ?? _email;
+      if (email != _email) {
+        _email = email;
+        await _persist();
+        notifyListeners();
+      }
+    } on ApiException catch (error) {
+      if (error.statusCode == 401) await _clear();
+    }
   }
 }
 
-List<int> _derivePassword((String, List<int>) input) =>
-    LocalAuthService._derive(input.$1, input.$2);

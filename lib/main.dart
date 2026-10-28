@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:just_audio_background/just_audio_background.dart';
 
@@ -17,7 +19,7 @@ Future<void> main() async {
     androidNotificationOngoing: true,
   );
   final settings = await Settings.load();
-  final auth = await LocalAuthService.load(settings);
+  final auth = await ApiAuthService.load();
   await Content.instance.load();
   await Soundscape.instance.init(
     modeId: settings.sound,
@@ -28,4 +30,6 @@ Future<void> main() async {
   Purchases.instance.init(settings);
   Reminders.instance.schedule(settings);
   runApp(GratideoApp(settings: settings, auth: auth));
+  // Validate the stored session in the background so startup stays instant.
+  unawaited(auth.refresh());
 }

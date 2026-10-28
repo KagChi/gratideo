@@ -1,0 +1,3 @@
+# Local development only. `wrangler dev` reads this file.
+# Generate one with: openssl rand -base64 32
+PEPPER="dev-pepper-replace-me-0123456789abcdef"

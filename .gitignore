@@ -12,6 +12,12 @@ build/
 /android/
 /ios/
 
+# Backend
+node_modules/
+backend/.wrangler/
+backend/dist/
+backend/.dev.vars
+
 # Local secrets for release signing
 android_key.jks
 key.properties
