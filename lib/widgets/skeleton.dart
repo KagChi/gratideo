@@ -62,7 +62,7 @@ class ScreenSkeleton extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(24, 16, 24, 40),
         children: [
           Text(title, style: context.display),
-          if (subtitle != null) Skeleton(height: 14, width: 220),
+          if (subtitle != null) const Skeleton(height: 14, width: 220),
           const SizedBox(height: 20),
           for (var i = 0; i < rows; i++) ...[
             Skeleton(height: rowHeight, radius: 16),

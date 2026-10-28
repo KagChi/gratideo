@@ -94,6 +94,7 @@ class Db {
               await d.update(
                 table,
                 {'uuid': newUuid(), 'updated_at': row['id'] == null ? nowIso() : nowIso()},
+                {'uuid': newUuid(), 'updated_at': nowIso()},
                 where: 'id = ?',
                 whereArgs: [row['id']],
               );
@@ -125,14 +126,6 @@ class Db {
     return rows.map(Prayer.fromMap).toList();
   }
 
-  Future<int> addPrayer(String title) async => (await db).insert('prayers', {
-        'uuid': newUuid(),
-        'title': title,
-        'status': 'praying',
-        'created_at': DateTime.now().toIso8601String(),
-        'updated_at': nowIso(),
-        'dirty': 1,
-      });
   Future<int> addPrayer(String title) async {
     final id = await (await db).insert('prayers', {
       'uuid': newUuid(),
@@ -160,12 +153,6 @@ class Db {
     _afterWrite();
   }
 
-  Future<void> deletePrayer(int id) async => (await db).update(
-        'prayers',
-        {'deleted_at': nowIso(), 'updated_at': nowIso(), 'dirty': 1},
-        where: 'id = ?',
-        whereArgs: [id],
-      );
   Future<void> deletePrayer(int id) async {
     await (await db).update(
       'prayers',
@@ -259,15 +246,6 @@ class Db {
     return rows.map(Entry.fromMap).toList();
   }
 
-  Future<int> addEntry(EntryKind kind, String text, {String? decision}) async => (await db).insert('entries', {
-        'uuid': newUuid(),
-        'kind': kind.name,
-        'text': text.trim(),
-        'decision': decision,
-        'created_at': DateTime.now().toIso8601String(),
-        'updated_at': nowIso(),
-        'dirty': 1,
-      });
   Future<int> addEntry(EntryKind kind, String text, {String? decision}) async {
     final id = await (await db).insert('entries', {
       'uuid': newUuid(),
@@ -282,12 +260,6 @@ class Db {
     return id;
   }
 
-  Future<void> deleteEntry(int id) async => (await db).update(
-        'entries',
-        {'deleted_at': nowIso(), 'updated_at': nowIso(), 'dirty': 1},
-        where: 'id = ?',
-        whereArgs: [id],
-      );
   Future<void> deleteEntry(int id) async {
     await (await db).update(
       'entries',
