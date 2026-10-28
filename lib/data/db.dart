@@ -93,7 +93,6 @@ class Db {
             for (final row in rows) {
               await d.update(
                 table,
-                {'uuid': newUuid(), 'updated_at': row['id'] == null ? nowIso() : nowIso()},
                 {'uuid': newUuid(), 'updated_at': nowIso()},
                 where: 'id = ?',
                 whereArgs: [row['id']],
